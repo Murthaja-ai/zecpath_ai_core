@@ -1,0 +1,17 @@
+# Python temporary files
+__pycache__/
+*.py[cod]
+
+# Virtual Environment (Very Important!)
+venv/
+env/
+
+# Environment Variables (Security)
+.env
+
+# Logs and Databases
+*.log
+*.sqlite3
+
+# OS Junk files
+.DS_Store
