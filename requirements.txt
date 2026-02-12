@@ -1,0 +1,13 @@
+numpy
+pandas
+spacy
+PyPDF2
+openai
+langchain
+opencv-python
+mediapipe
+fastapi
+uvicorn
+requests
+pytest
+python-dotenv
