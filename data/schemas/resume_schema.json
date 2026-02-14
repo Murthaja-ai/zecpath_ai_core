@@ -1,0 +1,42 @@
+{
+  "candidate_profile": {
+    "name": "String",
+    "email": "String",
+    "phone": "String",
+    "linkedin_url": "String (Optional)",
+    "github_url": "String (Optional)",
+    "location": "String"
+  },
+  "technical_skills": [
+    "List of Strings (e.g., Python, Java, SQL)"
+  ],
+  "soft_skills": [
+    "List of Strings (e.g., Leadership, Communication)"
+  ],
+  "experience": [
+    {
+      "job_title": "String",
+      "company": "String",
+      "start_date": "String (YYYY-MM)",
+      "end_date": "String (YYYY-MM) or 'Present'",
+      "description": "String"
+    }
+  ],
+  "education": [
+    {
+      "degree": "String",
+      "institution": "String",
+      "year_of_passing": "String"
+    }
+  ],
+  "projects": [
+    {
+      "title": "String",
+      "description": "String",
+      "technologies": ["List of Strings"]
+    }
+  ],
+  "certifications": [
+    "List of Strings"
+  ]
+}

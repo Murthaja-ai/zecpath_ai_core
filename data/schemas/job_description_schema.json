@@ -1,0 +1,19 @@
+{
+  "job_title": "String",
+  "department": "String",
+  "required_experience": {
+    "min_years": "Integer",
+    "max_years": "Integer"
+  },
+  "mandatory_skills": [
+    "List of Strings (Must Have)"
+  ],
+  "optional_skills": [
+    "List of Strings (Good to Have)"
+  ],
+  "responsibilities": [
+    "List of Strings"
+  ],
+  "education_requirement": "String",
+  "location": "String (Remote/On-site)"
+}
