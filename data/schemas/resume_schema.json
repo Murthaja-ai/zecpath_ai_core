@@ -1,24 +1,27 @@
 {
+  "meta_data": {
+    "parser_version": "1.0",
+    "parsing_date": "String (ISO Format)",
+    "source_file": "String (PDF Name)"
+  },
   "candidate_profile": {
     "name": "String",
     "email": "String",
     "phone": "String",
     "linkedin_url": "String (Optional)",
-    "github_url": "String (Optional)",
     "location": "String"
   },
-  "technical_skills": [
-    "List of Strings (e.g., Python, Java, SQL)"
-  ],
-  "soft_skills": [
-    "List of Strings (e.g., Leadership, Communication)"
-  ],
+  "skills": {
+    "technical": ["List of Strings"],
+    "soft": ["List of Strings"],
+    "tools": ["List of Strings"]
+  },
   "experience": [
     {
       "job_title": "String",
       "company": "String",
-      "start_date": "String (YYYY-MM)",
-      "end_date": "String (YYYY-MM) or 'Present'",
+      "start_date": "String",
+      "end_date": "String",
       "description": "String"
     }
   ],
@@ -26,17 +29,22 @@
     {
       "degree": "String",
       "institution": "String",
-      "year_of_passing": "String"
+      "year_passing": "String",
+      "score": "String (GPA/Percentage)"
     }
   ],
   "projects": [
     {
       "title": "String",
       "description": "String",
-      "technologies": ["List of Strings"]
+      "tech_stack": ["List of Strings"]
     }
   ],
   "certifications": [
-    "List of Strings"
+    {
+      "name": "String",
+      "issuer": "String",
+      "year": "String"
+    }
   ]
 }

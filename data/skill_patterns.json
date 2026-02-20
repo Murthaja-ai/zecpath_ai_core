@@ -1,0 +1,15 @@
+{
+  "Technical Skills": [
+    "Python", "Java", "C++", "SQL", "JavaScript", "React", "Angular", 
+    "Docker", "Kubernetes", "AWS", "Azure", "Linux", "Git", "Machine Learning", 
+    "Data Science", "Flask", "Django", "HTML", "CSS", "Node.js"
+  ],
+  "Data Analysis": [
+    "Excel", "Tableau", "Power BI", "Pandas", "NumPy", "Statistics", 
+    "Big Data", "Spark", "Hadoop"
+  ],
+  "Soft Skills": [
+    "Communication", "Leadership", "Project Management", "Agile", "Scrum", 
+    "Time Management", "Problem Solving", "Teamwork"
+  ]
+}

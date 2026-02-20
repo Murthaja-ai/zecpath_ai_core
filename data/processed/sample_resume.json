@@ -1,0 +1,18 @@
+{
+    "filename": "sample_resume.pdf",
+    "email": "murthajaafham@gmail.com",
+    "phone": "+91 8848383520",
+    "name": "MURTHAJA AFHAM",
+    "skills": [
+        "Excel",
+        "Problem Solving",
+        "SQL",
+        "NumPy",
+        "Data Science",
+        "Pandas",
+        "Python",
+        "Power BI",
+        "Statistics",
+        "Tableau"
+    ]
+}
