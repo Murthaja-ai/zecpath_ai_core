@@ -1,0 +1,23 @@
+{
+    "job_title": "Senior Data Scientist",
+    "requirements": {
+        "experience": {
+            "min_years": 3,
+            "max_years": 5
+        },
+        "education": "Bachelor's Degree",
+        "mandatory_skills": [
+            "Python",
+            "NumPy",
+            "Machine Learning",
+            "Pandas",
+            "SQL"
+        ],
+        "nice_to_have_skills": [
+            "Azure",
+            "AWS",
+            "Power BI",
+            "Tableau"
+        ]
+    }
+}

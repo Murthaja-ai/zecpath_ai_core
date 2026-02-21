@@ -1,0 +1,11 @@
+{
+  "Machine Learning": ["Machine Learning", "ML"],
+  "Python": ["Python", "Python3"],
+  "SQL": ["SQL", "MySQL", "PostgreSQL"],
+  "Pandas": ["Pandas"],
+  "NumPy": ["NumPy", "Numpy"],
+  "AWS": ["AWS", "Amazon Web Services"],
+  "Azure": ["Azure"],
+  "Power BI": ["Power BI", "PowerBI"],
+  "Tableau": ["Tableau"]
+}

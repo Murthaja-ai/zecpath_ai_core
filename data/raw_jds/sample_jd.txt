@@ -1,0 +1,17 @@
+Job Title: Senior Data Scientist
+Location: Remote, India
+Job Type: Full-time
+
+About the Role:
+We are looking for a Senior Data Scientist to join our analytics team. You will build machine learning models and data pipelines.
+
+Requirements:
+- Minimum 3-5 years of experience in data science.
+- Bachelor's degree in Computer Science, Statistics, or related field.
+- Must have strong skills in Python, SQL, and Machine Learning.
+- Experience with Pandas and NumPy is required.
+
+Nice to Have:
+- Familiarity with AWS or Azure cloud platforms.
+- Experience with Data Visualization tools like Power BI or Tableau is a plus.
+- Excellent communication and teamwork skills.
