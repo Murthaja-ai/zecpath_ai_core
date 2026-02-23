@@ -1,0 +1,12 @@
+Job Title: ML Researcher
+Status: Urgently Hiring
+
+About us: We build AI.
+
+Requirements:
+At least 5+ years of experience in AI.
+Bachelor's degree required.
+Must know ML, Numpy, and Pandas.
+
+Nice to Have:
+Azure cloud experience.

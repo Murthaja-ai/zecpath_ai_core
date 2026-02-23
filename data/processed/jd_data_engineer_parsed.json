@@ -1,0 +1,18 @@
+{
+    "job_title": "Cloud Data Engineer",
+    "requirements": {
+        "experience": {
+            "min_years": 2,
+            "max_years": 4
+        },
+        "education": "Master's Degree",
+        "mandatory_skills": [
+            "Python",
+            "AWS",
+            "SQL"
+        ],
+        "nice_to_have_skills": [
+            "Tableau"
+        ]
+    }
+}

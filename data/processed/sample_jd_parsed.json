@@ -7,17 +7,17 @@
         },
         "education": "Bachelor's Degree",
         "mandatory_skills": [
+            "SQL",
+            "Machine Learning",
             "Python",
             "NumPy",
-            "Machine Learning",
-            "Pandas",
-            "SQL"
+            "Pandas"
         ],
         "nice_to_have_skills": [
-            "Azure",
+            "Tableau",
             "AWS",
             "Power BI",
-            "Tableau"
+            "Azure"
         ]
     }
 }

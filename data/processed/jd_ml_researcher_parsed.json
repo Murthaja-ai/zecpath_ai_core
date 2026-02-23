@@ -1,0 +1,18 @@
+{
+    "job_title": "ML Researcher",
+    "requirements": {
+        "experience": {
+            "min_years": 5,
+            "max_years": null
+        },
+        "education": "Bachelor's Degree",
+        "mandatory_skills": [
+            "Pandas",
+            "Machine Learning",
+            "NumPy"
+        ],
+        "nice_to_have_skills": [
+            "Azure"
+        ]
+    }
+}

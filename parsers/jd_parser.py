@@ -87,21 +87,25 @@ def parse_jd(file_path):
 
 if __name__ == "__main__":
     base_dir = os.path.dirname(os.path.dirname(__file__))
-    jd_path = os.path.join(base_dir, "data", "raw_jds", "sample_jd.txt")
-    output_path = os.path.join(base_dir, "data", "processed", "sample_jd_parsed.json")
+    raw_dir = os.path.join(base_dir, "data", "raw_jds")
+    processed_dir = os.path.join(base_dir, "data", "processed")
     
-    if os.path.exists(jd_path):
-        result = parse_jd(jd_path)
-        
-        # Save the final JSON (Step 5)
-        with open(output_path, 'w') as f:
-            json.dump(result, f, indent=4)
+    print("🚀 Starting Batch Job Description Parsing...\n")
+    
+    # Loop through every file in the raw_jds folder
+    for filename in os.listdir(raw_dir):
+        if filename.endswith(".txt"):
+            jd_path = os.path.join(raw_dir, filename)
             
-        print("🚀 Job Description Parsing Complete!")
-        print(f"✅ Extracted Mandatory Skills: {len(result['requirements']['mandatory_skills'])}")
-        print(f"✅ Extracted Bonus Skills: {len(result['requirements']['nice_to_have_skills'])}")
-        print(f"📂 Saved clean output to: {output_path}")
-        print("\n--- FINAL JSON OUTPUT ---")
-        print(json.dumps(result, indent=4))
-    else:
-        print(f"❌ Could not find file at {jd_path}")
+            # Create a new output filename (e.g., jd_data_engineer_parsed.json)
+            output_filename = filename.replace(".txt", "_parsed.json")
+            output_path = os.path.join(processed_dir, output_filename)
+            
+            # Parse and Save
+            result = parse_jd(jd_path)
+            with open(output_path, 'w') as f:
+                json.dump(result, f, indent=4)
+                
+            print(f"✅ Successfully processed: {filename} -> {output_filename}")
+            
+    print("\n🎉 Batch processing complete! Check your data/processed/ folder.")

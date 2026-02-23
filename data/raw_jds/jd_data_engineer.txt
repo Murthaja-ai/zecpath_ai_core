@@ -1,0 +1,13 @@
+Job Title: Cloud Data Engineer
+Location: New York (Hybrid)
+
+We need a data engineer to handle our pipelines. 
+
+Requirements:
+Must have 2 - 4 years of hands-on experience. 
+Requires a Master's Degree in Computer Science.
+Skills needed: Python3, MySQL, and Amazon Web Services.
+Need to be good at problem-solving.
+
+Nice to have:
+Experience with Tableau is a huge bonus.
