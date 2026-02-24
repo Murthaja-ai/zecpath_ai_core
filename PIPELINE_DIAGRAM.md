@@ -9,15 +9,15 @@ graph TD
     D[HR Uploads Job Description] --> E(AWS S3: Raw File Locker)
 
     %% Step 2: The AI Parsers
-    A --> C{Day 5: Resume Parser Engine}
-    D --> F{Day 6: JD Parser Engine}
+    A --> C{ Resume Parser Engine}
+    D --> F{JD Parser Engine}
 
     %% Step 3: Document Storage
     C -->|Creates JSON + Metadata| G[(MongoDB: Candidate Profiles)]
     F -->|Creates JSON + Metadata| H[(MongoDB: Job Blueprints)]
 
     %% Step 4: The Brain
-    G --> I{Day 8: AI Matching Engine}
+    G --> I{AI Matching Engine}
     H --> I
 
     %% Step 5: Final Output
