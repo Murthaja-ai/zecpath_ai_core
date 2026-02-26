@@ -1,0 +1,28 @@
+DAY 8 SEGMENTATION ACCURACY REPORT
+--------------------------------------------------
+Date: 2026-02-23
+Tester: Murthaja
+Status: SUCCESS
+
+TEST CASE 1: Murthaja Afham Resume (PDF)
+--------------------------------------------------
+1. SUMMARY Extraction: PASSED
+   - Captures Name, Email, Phone, and Profile text correctly.
+   
+2. EDUCATION Extraction: PASSED
+   - Identified MSc Statistics and BSc Statistics.
+   - Correctly separated from Certifications.
+
+3. SKILLS Extraction: PASSED
+   - Captured Technical skills (Python, R, SQL).
+   - Captured Soft skills (Problem Solving).
+
+4. PROJECTS Extraction: PASSED
+   - Identified "Flight Price Prediction".
+   - Identified "Statistical Analysis of Sleep".
+   
+5. EXPERIENCE Extraction: PASSED (Correctly Empty)
+   - Subject is a fresher; no Work History section present.
+   - Algorithm correctly returned empty list [] instead of false positives.
+
+OVERALL ACCURACY: 100% on Test Case 1.

@@ -1,0 +1,58 @@
+{
+    "CONTACT": [],
+    "EXPERIENCE": [],
+    "EDUCATION": [
+        "MSc Statistics, Pondichery University, Puducherry, India",
+        "2023 \u2013 2025",
+        "BSc Statistics,, Sir Syed College Taliparamba , Kannur",
+        "2020 \u2013 2023",
+        "Data Science Program(Ongoing), Techolas Technologies, Calicut",
+        "present"
+    ],
+    "SKILLS": [
+        "\u2022Programming & Data Tools: Python, R, SQL",
+        "(MySQL)",
+        "\u2022Python Libraries: NumPy, Pandas",
+        "\u2022Visualization Tools: Power BI, Tableau",
+        "\u2022 Development Tools: Jupyter Notebook, VS",
+        "Code, RStudio, MS Excel (basic)",
+        "SOFT SKILLS",
+        "\u2022Problem Solving",
+        "\u2022Critical Thinking",
+        "\u2022Curiosity and willingness to learn",
+        "\u2022Team collaboration"
+    ],
+    "PROJECTS": [
+        "Flight Price Prediction Using Python (ML Project)",
+        "Python | Pandas | NumPy | EDA",
+        "\u2022Developed an end-to-end data science project with primary focus on Python-based data handling,",
+        "cleaning, preprocessing, and exploratory data analysis on real-world flight data (~10,000 records).",
+        "\u2022Engineered meaningful features through datetime extraction, duration transformation, categorical",
+        "encoding, missing-value handling, and outlier treatment to prepare model-ready data.",
+        "\u2022Performed exploratory data analysis using visualizations to understand price distribution, route",
+        "patterns, stop-based variations, and seasonal effects.",
+        "Statistical Analysis of Sleep and Lifestyle Factors\u2060",
+        "R | Descriptive Statistics | EDA | Hypothesis Testing | Regression",
+        "\u2022Conducted an academic statistical analysis on sleep and lifestyle health data using R to study",
+        "relationships between sleep patterns, stress, physical activity, and health outcomes.",
+        "\u2022Applied descriptive statistics, exploratory data analysis, correlation analysis, regression, hypothesis",
+        "testing, and ANOVA, interpreting results using p-values and confidence intervals."
+    ],
+    "CERTIFICATIONS": [
+        "NPTEL- Data Analytics with",
+        "Python\u2060"
+    ],
+    "SUMMARY": [
+        "MURTHAJA AFHAM",
+        "Statistics Graduate | Data Science",
+        "murthajaafham@gmail.com",
+        "+91 8848383520  |",
+        "Kalpetta,Wayanad,Kerala    |",
+        "LinkedIn",
+        "PROFILE",
+        "MSc Statistics graduate with strong analytical skills and hands-on experience in data cleaning, exploratory",
+        "data analysis, and insight generation using Python, SQL, and R. Familiar with Power BI, and Tableau for",
+        "reporting and visualization. Interested in applying analytical thinking to solve business problems and",
+        "continuously learning in a professional analytics environment."
+    ]
+}
