@@ -1,0 +1,29 @@
+DAY 9 SKILL EXTRACTION REPORT
+--------------------------------------------------
+Date: 2026-02-27
+Tester: Murthaja
+Status: SUCCESS
+
+TEST CASE 1: sample_resume.pdf
+--------------------------------------------------
+1. Database Loading: PASSED
+   - Loaded core skills and relations from data/skills_db.json.
+
+2. Confidence Scoring Logic: VERIFIED (0.0 - 1.0 Scale)
+   - EXACT MATCH (1.0): Python, SQL, Power BI, Tableau, Pandas.
+   - ALIAS MATCH (0.9): Machine Learning (matched alias).
+   - INFERRED MATCH (0.5): Django, Flask, Scikit-Learn (Inferred from core skills).
+
+3. Skill Stack Expansion: SUCCESS
+   - Engine successfully inferred related technologies from explicit mentions.
+
+4. Formatting & Categorization: PASSED
+   - Output successfully mapped to Enterprise JSON structure.
+   - Skills correctly grouped into:
+     * technical_skills
+     * business_skills
+     * soft_skills
+   - Arrays are sorted by confidence score (Highest to Lowest).
+
+TOTAL SKILLS EXTRACTED & CATEGORIZED: 27
+--------------------------------------------------

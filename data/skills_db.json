@@ -1,0 +1,81 @@
+[
+    {
+        "name": "Python",
+        "category": "Programming Language",
+        "aliases": ["py", "python3", "python 3"],
+        "related_skills": ["Django", "Flask", "FastAPI", "Pandas", "NumPy"]
+    },
+    {
+        "name": "Data Analysis",
+        "category": "Data Science",
+        "aliases": ["eda", "exploratory data analysis", "data analytics", "analysis"],
+        "related_skills": ["Pandas", "Matplotlib", "Seaborn"]
+    },
+    {
+        "name": "Pandas",
+        "category": "Data Science Library",
+        "aliases": ["pd", "pandas library", "dataframe"],
+        "related_skills": ["NumPy", "Data Cleaning"]
+    },
+    {
+        "name": "NumPy",
+        "category": "Data Science Library",
+        "aliases": ["np", "numpy library", "numerical python"],
+        "related_skills": ["Pandas", "SciPy"]
+    },
+    {
+        "name": "Machine Learning",
+        "category": "Data Science",
+        "aliases": ["ml", "predictive modeling", "model building"],
+        "related_skills": ["Scikit-Learn", "TensorFlow", "Keras", "PyTorch"]
+    },
+    {
+        "name": "SQL",
+        "category": "Database",
+        "aliases": ["mysql", "postgresql", "structured query language", "relational database"],
+        "related_skills": ["Database Management", "Data Warehousing"]
+    },
+    {
+        "name": "Power BI",
+        "category": "Visualization",
+        "aliases": ["powerbi", "microsoft power bi", "pbi"],
+        "related_skills": ["DAX", "Data Visualization"]
+    },
+    {
+        "name": "Tableau",
+        "category": "Visualization",
+        "aliases": ["tableau public", "tableau desktop"],
+        "related_skills": ["Data Visualization"]
+    },
+    {
+        "name": "Communication",
+        "category": "Soft Skill",
+        "aliases": ["verbal communication", "oral communication", "presentation skills", "public speaking"],
+        "related_skills": ["Teamwork"]
+    },
+    {
+        "name": "Problem Solving",
+        "category": "Soft Skill",
+        "aliases": ["critical thinking", "analytical thinking", "troubleshooting"],
+        "related_skills": []
+    },
+    {
+        "name": "R",
+        "category": "Programming Language",
+        "aliases": ["r language", "r programming"],
+        "related_skills": ["Statistics"]
+    },
+    {
+        "name": "Statistics",
+        "category": "Data Science",
+        "aliases": ["statistical analysis", "stats", "probability"],
+        "related_skills": ["R", "Hypothesis Testing"]
+    },
+    {
+        "name": "VS Code",
+        "category": "Tool",
+        "aliases": ["vscode", "visual studio code"],
+        "related_skills": []
+    }
+    
+]

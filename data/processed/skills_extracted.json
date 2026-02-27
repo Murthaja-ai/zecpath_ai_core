@@ -1,0 +1,119 @@
+{
+    "filename": "sample_resume.pdf",
+    "total_skills_found": 27,
+    "extracted_skills": {
+        "technical_skills": [
+            {
+                "skill": "Python",
+                "confidence": 1.0
+            },
+            {
+                "skill": "Pandas",
+                "confidence": 1.0
+            },
+            {
+                "skill": "NumPy",
+                "confidence": 1.0
+            },
+            {
+                "skill": "Data Analysis",
+                "confidence": 1.0
+            },
+            {
+                "skill": "SQL",
+                "confidence": 1.0
+            },
+            {
+                "skill": "Power BI",
+                "confidence": 1.0
+            },
+            {
+                "skill": "Tableau",
+                "confidence": 1.0
+            },
+            {
+                "skill": "R",
+                "confidence": 1.0
+            },
+            {
+                "skill": "Statistics",
+                "confidence": 1.0
+            },
+            {
+                "skill": "Machine Learning",
+                "confidence": 0.9
+            },
+            {
+                "skill": "Django",
+                "confidence": 0.5
+            },
+            {
+                "skill": "Flask",
+                "confidence": 0.5
+            },
+            {
+                "skill": "FastAPI",
+                "confidence": 0.5
+            },
+            {
+                "skill": "Matplotlib",
+                "confidence": 0.5
+            },
+            {
+                "skill": "Seaborn",
+                "confidence": 0.5
+            },
+            {
+                "skill": "Data Cleaning",
+                "confidence": 0.5
+            },
+            {
+                "skill": "SciPy",
+                "confidence": 0.5
+            },
+            {
+                "skill": "Scikit-Learn",
+                "confidence": 0.5
+            },
+            {
+                "skill": "TensorFlow",
+                "confidence": 0.5
+            },
+            {
+                "skill": "Keras",
+                "confidence": 0.5
+            },
+            {
+                "skill": "PyTorch",
+                "confidence": 0.5
+            },
+            {
+                "skill": "Database Management",
+                "confidence": 0.5
+            },
+            {
+                "skill": "Data Warehousing",
+                "confidence": 0.5
+            },
+            {
+                "skill": "DAX",
+                "confidence": 0.5
+            },
+            {
+                "skill": "Data Visualization",
+                "confidence": 0.5
+            },
+            {
+                "skill": "Hypothesis Testing",
+                "confidence": 0.5
+            }
+        ],
+        "business_skills": [],
+        "soft_skills": [
+            {
+                "skill": "Problem Solving",
+                "confidence": 1.0
+            }
+        ]
+    }
+}
