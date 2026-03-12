@@ -43,7 +43,7 @@ def run_segmentation_pipeline():
     output_path = os.path.join(processed_dir, output_filename)
 
     with open(output_path, "w", encoding="utf-8") as f:
-        json.dump(segmented_data, f, indent=4)
+        json.dump(segmented_data, f, indent=4, ensure_ascii=False)
 
     print(f"✅ Success! Segmented data saved to: {output_path}")
     

@@ -20,13 +20,13 @@ When the Day 5 Resume Parser runs in production, it will wrap the candidate's da
 {
   "_metadata": {
     "candidate_id": "cnd_8f72a9b",
-    "job_id": "job_3391xpf",
-    "timestamp": "2026-02-23T14:30:00Z",
-    "model_version": "resume_parser_v1.0",
+    "job_id": "job_role_10_equity_research_analyst",
+    "timestamp": "2026-03-05T09:09:25Z",
+    "model_version": "resume_parser_v2.0_finance",
     "document_status": "parsed"
   },
   "candidate_data": {
     "name": "Murthaja",
-    "skills": ["Python", "Angular"]
+    "skills": ["Financial Modeling", "Valuation", "Excel", "Equity Research"]
   }
 }

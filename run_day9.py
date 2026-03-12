@@ -2,6 +2,7 @@ import os
 import json
 from parsers.resume_parser import ResumeParser
 from parsers.skill_extractor import SkillExtractor
+from parsers.resume_segmenter import ResumeSegmenter
 
 def run_skill_pipeline():
     # 1. Setup paths
@@ -34,10 +35,23 @@ def run_skill_pipeline():
     target_file = pdf_files[0]
     print(f"📄 Processing: {target_file}...")
 
-    # 4. Extract Text & Skills
+    # 4. Extract Text
     raw_text = parser.extract_text(os.path.join(raw_resume_dir, target_file))
-    print("🧠 AI is identifying and structuring skills...")
-    extracted_skills = extractor.extract_skills(raw_text)
+    
+    # 4.5. SEGMENT THE TEXT FIRST (Day 8 Integration!)
+    segmenter = ResumeSegmenter()
+    segmented_data = segmenter.segment(raw_text)
+    
+    # Combine only the highly relevant buckets into one string
+    targeted_text = "\n".join(
+        segmented_data.get("SKILLS", []) + 
+        segmented_data.get("EXPERIENCE", []) + 
+        segmented_data.get("PROJECTS", [])
+    )
+
+    print("🧠 AI is identifying and structuring skills from targeted sections...")
+    # Feed ONLY the targeted text to the extractor, not the whole PDF!
+    extracted_skills = extractor.extract_skills(targeted_text)
     
     # --- 5. ENTERPRISE FORMATTING LOGIC ---
     structured_output = {

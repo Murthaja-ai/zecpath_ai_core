@@ -1,0 +1,35 @@
+{
+    "jobs": [
+        {
+            "title": "Data Analyst",
+            "company": "Planck Technology",
+            "start_date": "01/2022",
+            "end_date": "Present",
+            "duration_months": 48,
+            "description": [
+                "\u2022",
+                "\u2022",
+                "\u2022",
+                "\u2022",
+                "\u2022",
+                "\u2022"
+            ]
+        },
+        {
+            "title": "Data Analyst",
+            "company": "PTC Solutions",
+            "start_date": "05/2020",
+            "end_date": "12/2021",
+            "duration_months": 12,
+            "description": [
+                "\u2022",
+                "\u2022",
+                "\u2022",
+                "\u2022",
+                "\u2022",
+                "\u2022"
+            ]
+        }
+    ],
+    "total_experience_years": 5.0
+}

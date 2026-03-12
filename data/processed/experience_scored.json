@@ -1,0 +1,22 @@
+{
+    "candidate_file": "experienced_resume.pdf",
+    "total_experience_years": 5.8,
+    "effective_relevant_years": 4.6,
+    "experience_entries": [
+        {
+            "job_title": "Data Analyst",
+            "company": "Planck Technology, USA",
+            "duration": "01/2022 - Present",
+            "duration_months": 50,
+            "relevance_score": 0.8
+        },
+        {
+            "job_title": "Data Analyst",
+            "company": "PTC Solutions, USA",
+            "duration": "05/2020 - 12/2021",
+            "duration_months": 19,
+            "relevance_score": 0.8
+        }
+    ],
+    "employment_gaps": []
+}

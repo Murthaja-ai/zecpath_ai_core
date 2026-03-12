@@ -1,0 +1,987 @@
+[
+    {
+        "job_title": "Equity Research Trainee",
+        "requirements": {
+            "experience": {
+                "min_years": 0,
+                "max_years": null
+            },
+            "education": "CFA, Bachelor's/Degree in Finance",
+            "mandatory_skills": [
+                "Financial Modeling",
+                "Valuation",
+                "Excel",
+                "Equity Research"
+            ],
+            "nice_to_have_skills": []
+        }
+    },
+    {
+        "job_title": "Junior Equity Research Analyst",
+        "requirements": {
+            "experience": {
+                "min_years": 0,
+                "max_years": null
+            },
+            "education": "MBA/Master's, CA, Bachelor's/Degree in Finance",
+            "mandatory_skills": [
+                "Fundamental Analysis",
+                "Financial Modeling",
+                "Equity Research",
+                "Excel",
+                "Valuation",
+                "Peer Comparison"
+            ],
+            "nice_to_have_skills": []
+        }
+    },
+    {
+        "job_title": "Research Analyst Equities",
+        "requirements": {
+            "experience": {
+                "min_years": 0,
+                "max_years": null
+            },
+            "education": "Not Specified",
+            "mandatory_skills": [
+                "SEBI Regulations",
+                "Valuation",
+                "Excel",
+                "Equity Research"
+            ],
+            "nice_to_have_skills": []
+        }
+    },
+    {
+        "job_title": "Investment Research Associate",
+        "requirements": {
+            "experience": {
+                "min_years": 0,
+                "max_years": null
+            },
+            "education": "MBA/Master's, CFA, Bachelor's/Degree in Finance",
+            "mandatory_skills": [],
+            "nice_to_have_skills": []
+        }
+    },
+    {
+        "job_title": "Capital Markets Analyst",
+        "requirements": {
+            "experience": {
+                "min_years": 0,
+                "max_years": null
+            },
+            "education": "Not Specified",
+            "mandatory_skills": [
+                "SEBI Regulations",
+                "Valuation",
+                "Excel"
+            ],
+            "nice_to_have_skills": []
+        }
+    },
+    {
+        "job_title": "Financial Research Analyst",
+        "requirements": {
+            "experience": {
+                "min_years": 0,
+                "max_years": null
+            },
+            "education": "Bachelor's/Degree in Finance",
+            "mandatory_skills": [
+                "Excel"
+            ],
+            "nice_to_have_skills": []
+        }
+    },
+    {
+        "job_title": "Business Valuation Analyst (Junior)",
+        "requirements": {
+            "experience": {
+                "min_years": 0,
+                "max_years": null
+            },
+            "education": "MBA/Master's, CFA, CA",
+            "mandatory_skills": [
+                "Financial Modeling",
+                "Valuation",
+                "Equity Research"
+            ],
+            "nice_to_have_skills": []
+        }
+    },
+    {
+        "job_title": "Sell-Side Research Associate",
+        "requirements": {
+            "experience": {
+                "min_years": 0,
+                "max_years": null
+            },
+            "education": "Not Specified",
+            "mandatory_skills": [
+                "Financial Modeling",
+                "Equity Research",
+                "Excel",
+                "Valuation",
+                "SEBI Regulations"
+            ],
+            "nice_to_have_skills": []
+        }
+    },
+    {
+        "job_title": "Buy-Side Research Associate",
+        "requirements": {
+            "experience": {
+                "min_years": 0,
+                "max_years": null
+            },
+            "education": "MBA/Master's, CFA",
+            "mandatory_skills": [
+                "Fundamental Analysis",
+                "Financial Modeling"
+            ],
+            "nice_to_have_skills": []
+        }
+    },
+    {
+        "job_title": "Equity Research Analyst",
+        "requirements": {
+            "experience": {
+                "min_years": 0,
+                "max_years": null
+            },
+            "education": "MBA/Master's, CFA, CA, Bachelor's/Degree in Finance",
+            "mandatory_skills": [
+                "Fundamental Analysis",
+                "Financial Modeling",
+                "Equity Research",
+                "Valuation",
+                "Peer Comparison",
+                "SEBI Regulations"
+            ],
+            "nice_to_have_skills": []
+        }
+    },
+    {
+        "job_title": "Senior Equity Research Analyst",
+        "requirements": {
+            "experience": {
+                "min_years": 5,
+                "max_years": null
+            },
+            "education": "MBA/Master's, CFA, CA",
+            "mandatory_skills": [
+                "Financial Modeling",
+                "Valuation",
+                "Equity Research"
+            ],
+            "nice_to_have_skills": []
+        }
+    },
+    {
+        "job_title": "Fundamental Equity Analyst",
+        "requirements": {
+            "experience": {
+                "min_years": 0,
+                "max_years": null
+            },
+            "education": "CFA, CA",
+            "mandatory_skills": [
+                "Fundamental Analysis",
+                "Valuation"
+            ],
+            "nice_to_have_skills": []
+        }
+    },
+    {
+        "job_title": "Stock Market Research Analyst",
+        "requirements": {
+            "experience": {
+                "min_years": 0,
+                "max_years": null
+            },
+            "education": "Not Specified",
+            "mandatory_skills": [
+                "SEBI Regulations"
+            ],
+            "nice_to_have_skills": []
+        }
+    },
+    {
+        "job_title": "Investment Analyst Equities",
+        "requirements": {
+            "experience": {
+                "min_years": 0,
+                "max_years": null
+            },
+            "education": "MBA/Master's, CFA",
+            "mandatory_skills": [
+                "Financial Modeling",
+                "Valuation"
+            ],
+            "nice_to_have_skills": []
+        }
+    },
+    {
+        "job_title": "Capital Markets Research Analyst",
+        "requirements": {
+            "experience": {
+                "min_years": 0,
+                "max_years": null
+            },
+            "education": "Bachelor's/Degree in Finance",
+            "mandatory_skills": [
+                "SEBI Regulations"
+            ],
+            "nice_to_have_skills": []
+        }
+    },
+    {
+        "job_title": "Listed Equity Analyst",
+        "requirements": {
+            "experience": {
+                "min_years": 0,
+                "max_years": null
+            },
+            "education": "MBA/Master's, CFA, CA",
+            "mandatory_skills": [
+                "Valuation",
+                "Equity Research"
+            ],
+            "nice_to_have_skills": []
+        }
+    },
+    {
+        "job_title": "Public Equity Analyst",
+        "requirements": {
+            "experience": {
+                "min_years": 0,
+                "max_years": null
+            },
+            "education": "Not Specified",
+            "mandatory_skills": [
+                "Valuation"
+            ],
+            "nice_to_have_skills": []
+        }
+    },
+    {
+        "job_title": "Valuation & Equity Research Analyst",
+        "requirements": {
+            "experience": {
+                "min_years": 0,
+                "max_years": null
+            },
+            "education": "MBA/Master's, CFA, CA",
+            "mandatory_skills": [
+                "Financial Modeling",
+                "Valuation",
+                "Equity Research"
+            ],
+            "nice_to_have_skills": []
+        }
+    },
+    {
+        "job_title": "Banking & Financial Services Equity Analyst (BFSI)",
+        "requirements": {
+            "experience": {
+                "min_years": 0,
+                "max_years": null
+            },
+            "education": "MBA/Master's, CFA, CA",
+            "mandatory_skills": [
+                "Financial Modeling",
+                "SEBI Regulations",
+                "Valuation",
+                "Equity Research"
+            ],
+            "nice_to_have_skills": []
+        }
+    },
+    {
+        "job_title": "IT / Technology Equity Analyst",
+        "requirements": {
+            "experience": {
+                "min_years": 0,
+                "max_years": null
+            },
+            "education": "MBA/Master's, CFA",
+            "mandatory_skills": [
+                "Valuation"
+            ],
+            "nice_to_have_skills": []
+        }
+    },
+    {
+        "job_title": "Pharma & Healthcare Equity Analyst",
+        "requirements": {
+            "experience": {
+                "min_years": 0,
+                "max_years": null
+            },
+            "education": "MBA/Master's, CFA",
+            "mandatory_skills": [],
+            "nice_to_have_skills": []
+        }
+    },
+    {
+        "job_title": "FMCG / Consumer Goods Equity Analyst",
+        "requirements": {
+            "experience": {
+                "min_years": 0,
+                "max_years": null
+            },
+            "education": "MBA/Master's, CFA",
+            "mandatory_skills": [
+                "Financial Modeling",
+                "Valuation"
+            ],
+            "nice_to_have_skills": []
+        }
+    },
+    {
+        "job_title": "Automobile & Auto-Ancillary Equity Analyst",
+        "requirements": {
+            "experience": {
+                "min_years": 0,
+                "max_years": null
+            },
+            "education": "Not Specified",
+            "mandatory_skills": [
+                "Financial Modeling",
+                "Equity Research"
+            ],
+            "nice_to_have_skills": []
+        }
+    },
+    {
+        "job_title": "Energy, Oil & Gas Equity Analyst",
+        "requirements": {
+            "experience": {
+                "min_years": 0,
+                "max_years": null
+            },
+            "education": "MBA/Master's, CFA",
+            "mandatory_skills": [
+                "Financial Modeling",
+                "Valuation"
+            ],
+            "nice_to_have_skills": []
+        }
+    },
+    {
+        "job_title": "Metals & Mining Equity Analyst",
+        "requirements": {
+            "experience": {
+                "min_years": 0,
+                "max_years": null
+            },
+            "education": "MBA/Master's, CFA",
+            "mandatory_skills": [
+                "Financial Modeling",
+                "Valuation"
+            ],
+            "nice_to_have_skills": []
+        }
+    },
+    {
+        "job_title": "Infrastructure & Real Estate Equity Analyst",
+        "requirements": {
+            "experience": {
+                "min_years": 0,
+                "max_years": null
+            },
+            "education": "MBA/Master's, CA",
+            "mandatory_skills": [
+                "Valuation",
+                "Equity Research"
+            ],
+            "nice_to_have_skills": []
+        }
+    },
+    {
+        "job_title": "Telecom & Media Equity Analyst",
+        "requirements": {
+            "experience": {
+                "min_years": 0,
+                "max_years": null
+            },
+            "education": "MBA/Master's, CFA",
+            "mandatory_skills": [
+                "Financial Modeling",
+                "Valuation"
+            ],
+            "nice_to_have_skills": []
+        }
+    },
+    {
+        "job_title": "ESG / Sustainable Equity Analyst",
+        "requirements": {
+            "experience": {
+                "min_years": 0,
+                "max_years": null
+            },
+            "education": "CFA",
+            "mandatory_skills": [
+                "Valuation",
+                "Equity Research"
+            ],
+            "nice_to_have_skills": []
+        }
+    },
+    {
+        "job_title": "Buy-Side Equity Research Analyst",
+        "requirements": {
+            "experience": {
+                "min_years": 0,
+                "max_years": null
+            },
+            "education": "MBA/Master's, CFA, CA",
+            "mandatory_skills": [
+                "Fundamental Analysis",
+                "Financial Modeling",
+                "Valuation",
+                "Equity Research"
+            ],
+            "nice_to_have_skills": []
+        }
+    },
+    {
+        "job_title": "Mutual Fund Research Analyst",
+        "requirements": {
+            "experience": {
+                "min_years": 0,
+                "max_years": null
+            },
+            "education": "MBA/Master's, CFA",
+            "mandatory_skills": [
+                "SEBI Regulations",
+                "Equity Research"
+            ],
+            "nice_to_have_skills": []
+        }
+    },
+    {
+        "job_title": "Portfolio Research Analyst",
+        "requirements": {
+            "experience": {
+                "min_years": 0,
+                "max_years": null
+            },
+            "education": "CFA",
+            "mandatory_skills": [
+                "Equity Research"
+            ],
+            "nice_to_have_skills": []
+        }
+    },
+    {
+        "job_title": "Hedge Fund Analyst",
+        "requirements": {
+            "experience": {
+                "min_years": 0,
+                "max_years": null
+            },
+            "education": "MBA/Master's, CFA",
+            "mandatory_skills": [
+                "Financial Modeling",
+                "Valuation"
+            ],
+            "nice_to_have_skills": []
+        }
+    },
+    {
+        "job_title": "PMS Research Analyst",
+        "requirements": {
+            "experience": {
+                "min_years": 0,
+                "max_years": null
+            },
+            "education": "MBA/Master's, CFA, CA",
+            "mandatory_skills": [
+                "SEBI Regulations"
+            ],
+            "nice_to_have_skills": []
+        }
+    },
+    {
+        "job_title": "Long-Only Equity Analyst",
+        "requirements": {
+            "experience": {
+                "min_years": 0,
+                "max_years": null
+            },
+            "education": "MBA/Master's, CFA",
+            "mandatory_skills": [
+                "Fundamental Analysis",
+                "Valuation"
+            ],
+            "nice_to_have_skills": []
+        }
+    },
+    {
+        "job_title": "Equity Strategy Analyst",
+        "requirements": {
+            "experience": {
+                "min_years": 0,
+                "max_years": null
+            },
+            "education": "CFA",
+            "mandatory_skills": [
+                "Equity Research"
+            ],
+            "nice_to_have_skills": []
+        }
+    },
+    {
+        "job_title": "Sell-Side Equity Research Analyst",
+        "requirements": {
+            "experience": {
+                "min_years": 0,
+                "max_years": null
+            },
+            "education": "MBA/Master's, CFA, CA",
+            "mandatory_skills": [
+                "Fundamental Analysis",
+                "Financial Modeling",
+                "Equity Research",
+                "Valuation",
+                "SEBI Regulations"
+            ],
+            "nice_to_have_skills": []
+        }
+    },
+    {
+        "job_title": "Institutional Equity Research Analyst",
+        "requirements": {
+            "experience": {
+                "min_years": 0,
+                "max_years": null
+            },
+            "education": "MBA/Master's, CFA, CA",
+            "mandatory_skills": [
+                "Equity Research"
+            ],
+            "nice_to_have_skills": []
+        }
+    },
+    {
+        "job_title": "Brokerage Research Analyst",
+        "requirements": {
+            "experience": {
+                "min_years": 0,
+                "max_years": null
+            },
+            "education": "Not Specified",
+            "mandatory_skills": [
+                "SEBI Regulations",
+                "Equity Research"
+            ],
+            "nice_to_have_skills": []
+        }
+    },
+    {
+        "job_title": "Investment Banking Research Analyst",
+        "requirements": {
+            "experience": {
+                "min_years": 0,
+                "max_years": null
+            },
+            "education": "MBA/Master's, CFA, CA",
+            "mandatory_skills": [
+                "Financial Modeling",
+                "Valuation",
+                "Equity Research"
+            ],
+            "nice_to_have_skills": []
+        }
+    },
+    {
+        "job_title": "Equity Research Institutional Desk",
+        "requirements": {
+            "experience": {
+                "min_years": 0,
+                "max_years": null
+            },
+            "education": "Not Specified",
+            "mandatory_skills": [
+                "Equity Research"
+            ],
+            "nice_to_have_skills": []
+        }
+    },
+    {
+        "job_title": "Corporate Access Analyst",
+        "requirements": {
+            "experience": {
+                "min_years": 0,
+                "max_years": null
+            },
+            "education": "Not Specified",
+            "mandatory_skills": [],
+            "nice_to_have_skills": []
+        }
+    },
+    {
+        "job_title": "Equity Strategy Analyst",
+        "requirements": {
+            "experience": {
+                "min_years": 0,
+                "max_years": null
+            },
+            "education": "MBA/Master's, CFA",
+            "mandatory_skills": [
+                "Valuation",
+                "Equity Research"
+            ],
+            "nice_to_have_skills": []
+        }
+    },
+    {
+        "job_title": "Quantitative Equity Analyst",
+        "requirements": {
+            "experience": {
+                "min_years": 0,
+                "max_years": null
+            },
+            "education": "Not Specified",
+            "mandatory_skills": [],
+            "nice_to_have_skills": []
+        }
+    },
+    {
+        "job_title": "Quant Research Analyst",
+        "requirements": {
+            "experience": {
+                "min_years": 0,
+                "max_years": null
+            },
+            "education": "Not Specified",
+            "mandatory_skills": [],
+            "nice_to_have_skills": []
+        }
+    },
+    {
+        "job_title": "Macro Equity Analyst",
+        "requirements": {
+            "experience": {
+                "min_years": 0,
+                "max_years": null
+            },
+            "education": "CFA",
+            "mandatory_skills": [
+                "Valuation"
+            ],
+            "nice_to_have_skills": []
+        }
+    },
+    {
+        "job_title": "Factor-Based Equity Analyst",
+        "requirements": {
+            "experience": {
+                "min_years": 0,
+                "max_years": null
+            },
+            "education": "CFA",
+            "mandatory_skills": [],
+            "nice_to_have_skills": []
+        }
+    },
+    {
+        "job_title": "Thematic Research Analyst",
+        "requirements": {
+            "experience": {
+                "min_years": 0,
+                "max_years": null
+            },
+            "education": "MBA/Master's, CFA",
+            "mandatory_skills": [],
+            "nice_to_have_skills": []
+        }
+    },
+    {
+        "job_title": "Market Intelligence Analyst",
+        "requirements": {
+            "experience": {
+                "min_years": 0,
+                "max_years": null
+            },
+            "education": "Not Specified",
+            "mandatory_skills": [],
+            "nice_to_have_skills": []
+        }
+    },
+    {
+        "job_title": "Lead Equity Research Analyst",
+        "requirements": {
+            "experience": {
+                "min_years": 8,
+                "max_years": null
+            },
+            "education": "MBA/Master's, CFA, CA",
+            "mandatory_skills": [
+                "Equity Research"
+            ],
+            "nice_to_have_skills": []
+        }
+    },
+    {
+        "job_title": "Principal Equity Analyst",
+        "requirements": {
+            "experience": {
+                "min_years": 0,
+                "max_years": null
+            },
+            "education": "CFA",
+            "mandatory_skills": [
+                "Financial Modeling",
+                "Valuation",
+                "Equity Research"
+            ],
+            "nice_to_have_skills": []
+        }
+    },
+    {
+        "job_title": "Head of Equity Research",
+        "requirements": {
+            "experience": {
+                "min_years": 10,
+                "max_years": null
+            },
+            "education": "MBA/Master's, CFA, CA",
+            "mandatory_skills": [
+                "Equity Research"
+            ],
+            "nice_to_have_skills": []
+        }
+    },
+    {
+        "job_title": "Research Director Equities",
+        "requirements": {
+            "experience": {
+                "min_years": 0,
+                "max_years": null
+            },
+            "education": "CFA",
+            "mandatory_skills": [
+                "Equity Research"
+            ],
+            "nice_to_have_skills": []
+        }
+    },
+    {
+        "job_title": "Chief Investment Strategist",
+        "requirements": {
+            "experience": {
+                "min_years": 0,
+                "max_years": null
+            },
+            "education": "MBA/Master's, CFA",
+            "mandatory_skills": [],
+            "nice_to_have_skills": []
+        }
+    },
+    {
+        "job_title": "Chief Investment Officer (CIO Equities)",
+        "requirements": {
+            "experience": {
+                "min_years": 15,
+                "max_years": null
+            },
+            "education": "CFA",
+            "mandatory_skills": [],
+            "nice_to_have_skills": []
+        }
+    },
+    {
+        "job_title": "Independent Equity Research Analyst",
+        "requirements": {
+            "experience": {
+                "min_years": 0,
+                "max_years": null
+            },
+            "education": "MBA/Master's, CFA, CA",
+            "mandatory_skills": [
+                "SEBI Regulations",
+                "Valuation",
+                "Equity Research"
+            ],
+            "nice_to_have_skills": []
+        }
+    },
+    {
+        "job_title": "SEBI-Registered Research Analyst (RA)",
+        "requirements": {
+            "experience": {
+                "min_years": 0,
+                "max_years": null
+            },
+            "education": "Not Specified",
+            "mandatory_skills": [
+                "SEBI Regulations",
+                "Equity Research"
+            ],
+            "nice_to_have_skills": []
+        }
+    },
+    {
+        "job_title": "Investment Advisor Equities",
+        "requirements": {
+            "experience": {
+                "min_years": 0,
+                "max_years": null
+            },
+            "education": "MBA/Master's, CFA",
+            "mandatory_skills": [
+                "SEBI Regulations"
+            ],
+            "nice_to_have_skills": []
+        }
+    },
+    {
+        "job_title": "Stock Market Consultant",
+        "requirements": {
+            "experience": {
+                "min_years": 0,
+                "max_years": null
+            },
+            "education": "Not Specified",
+            "mandatory_skills": [
+                "Equity Research"
+            ],
+            "nice_to_have_skills": []
+        }
+    },
+    {
+        "job_title": "Freelance Equity Analyst",
+        "requirements": {
+            "experience": {
+                "min_years": 0,
+                "max_years": null
+            },
+            "education": "Not Specified",
+            "mandatory_skills": [
+                "Financial Modeling",
+                "Valuation",
+                "Equity Research"
+            ],
+            "nice_to_have_skills": []
+        }
+    },
+    {
+        "job_title": "Equity Research Content Analyst",
+        "requirements": {
+            "experience": {
+                "min_years": 0,
+                "max_years": null
+            },
+            "education": "Not Specified",
+            "mandatory_skills": [
+                "Valuation",
+                "Equity Research"
+            ],
+            "nice_to_have_skills": []
+        }
+    },
+    {
+        "job_title": "Financial Markets Educator / Trainer",
+        "requirements": {
+            "experience": {
+                "min_years": 0,
+                "max_years": null
+            },
+            "education": "CFA, CA",
+            "mandatory_skills": [
+                "Financial Modeling",
+                "Valuation",
+                "Equity Research"
+            ],
+            "nice_to_have_skills": []
+        }
+    },
+    {
+        "job_title": "Financial Modeling Analyst",
+        "requirements": {
+            "experience": {
+                "min_years": 0,
+                "max_years": null
+            },
+            "education": "MBA/Master's, CFA, CA",
+            "mandatory_skills": [
+                "Financial Modeling",
+                "Valuation",
+                "Excel",
+                "Equity Research"
+            ],
+            "nice_to_have_skills": []
+        }
+    },
+    {
+        "job_title": "Corporate Finance Analyst",
+        "requirements": {
+            "experience": {
+                "min_years": 0,
+                "max_years": null
+            },
+            "education": "MBA/Master's, CFA, CA",
+            "mandatory_skills": [
+                "Valuation"
+            ],
+            "nice_to_have_skills": []
+        }
+    },
+    {
+        "job_title": "M&A Research Analyst",
+        "requirements": {
+            "experience": {
+                "min_years": 0,
+                "max_years": null
+            },
+            "education": "MBA/Master's, CFA, CA",
+            "mandatory_skills": [
+                "Financial Modeling",
+                "Valuation"
+            ],
+            "nice_to_have_skills": []
+        }
+    },
+    {
+        "job_title": "Risk & Equity Analyst",
+        "requirements": {
+            "experience": {
+                "min_years": 0,
+                "max_years": null
+            },
+            "education": "CFA",
+            "mandatory_skills": [],
+            "nice_to_have_skills": []
+        }
+    },
+    {
+        "job_title": "Credit & Equity Research Analyst",
+        "requirements": {
+            "experience": {
+                "min_years": 0,
+                "max_years": null
+            },
+            "education": "CFA, CA",
+            "mandatory_skills": [
+                "Valuation",
+                "Equity Research"
+            ],
+            "nice_to_have_skills": []
+        }
+    },
+    {
+        "job_title": "Investor Relations Analyst",
+        "requirements": {
+            "experience": {
+                "min_years": 0,
+                "max_years": null
+            },
+            "education": "MBA/Master's, CFA, CA",
+            "mandatory_skills": [],
+            "nice_to_have_skills": []
+        }
+    }
+]

@@ -15,3 +15,8 @@ env/
 
 # OS Junk files
 .DS_Store
+# Ignore raw datasets and one-off scripts
+data/raw_jds/*.txt
+data/raw_resumes/*.pdf
+data/*.pdf
+auto_splitter.py

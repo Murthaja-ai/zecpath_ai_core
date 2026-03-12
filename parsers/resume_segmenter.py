@@ -23,8 +23,8 @@ class ResumeSegmenter:
                 r"key projects", r"capstone projects"
             ],
             "CERTIFICATIONS": [
-                r"certifications", r"certificates", r"courses", r"licenses", 
-                r"trainings", r"achievements", r"awards"
+                r"certification", r"certifications", r"certificate", r"certificates", 
+                r"courses", r"licenses", r"trainings", r"achievements", r"awards"
             ],
             "CONTACT": [
                 r"contact", r"contact info", r"contact details", r"reach me", 
@@ -94,19 +94,19 @@ if __name__ == "__main__":
     # A fake resume text to test our logic
     sample_resume = """
     Murthaja
-    Software Developer | Kerala, India
+    Data Scientist & Statistician | Kerala, India
     
     *** Professional Experience ***
-    Software Engineer at TechCorp
-    - Built Angular apps
-    - Used Python for backend
+    Data Analyst Intern at TechCorp
+    - Built statistical models using R
+    - Used Python for data cleaning
     
     EDUCATION
-    B.Tech in Computer Science
-    University of Calicut
+    MSc in Statistics
+    Pondicherry University
     
     Technical Skills
-    Python, Angular, SQL, MongoDB
+    Python, R, SQL, Pandas, Tableau
     """
 
     segmenter = ResumeSegmenter()

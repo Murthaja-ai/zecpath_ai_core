@@ -1,39 +1,37 @@
 # 📄 Day 6: Job Description (JD) Parsing System Documentation
 
 ## 1. Objective
-The purpose of the JD Parsing System is to ingest unstructured, human-written job descriptions and convert them into a standardized, AI-readable JSON format. This structured data is the prerequisite for the Day 7 ATS Scoring Engine.
+To ingest unstructured, human-written job descriptions (from PDFs or text files) and convert them into a standardized, AI-readable JSON Master Database.
 
 ---
 
 ## 2. System Architecture & Step-by-Step Workflow
 
-The parsing engine (`jd_parser.py`) processes documents through a strict 5-step pipeline:
+The parsing pipeline processes documents through a highly automated 6-step pipeline:
 
-### Step 1: Text Normalization (The "Janitor" Phase)
-* **What it does:** Reads the raw text and passes it through `text_cleaner.py`.
-* **Technical Details:** Removes non-ASCII characters, normalizes weird bullet points (`•`, `➤` to `-`), and fixes horizontal spacing issues while preserving vertical line breaks.
-* **Why it matters:** Prevents downstream regex rules from breaking due to hidden formatting artifacts.
+### Step 1: The Auto-Splitter (Data Ingestion)
+* **What it does:** Reads a master corporate PDF catalog.
+* **Technical Details:** Uses `pdfplumber` to extract text and a highly forgiving Regular Expression knife (`re.split`) to slice the document into dozens of distinct job text files, safely saving them to `data/raw_jds/`.
 
-### Step 2: Core Information Extraction (Regex Matching)
-* **What it does:** Locates and extracts the non-negotiable job parameters.
-* **Technical Details:**
-  * **Job Title:** Uses `re.search` to find strings following "Job Title:".
-  * **Experience:** Uses a complex Regex pattern `(\d+)(?:\s*-\s*(\d+))?` to extract exact integers (e.g., converting "3-5 years" into `min_years: 3` and `max_years: 5`).
-  * **Education:** Scans for keywords like "Bachelor's", "B.S.", or "Master's" and maps them to standard strings.
+### Step 2: Text Normalization
+* **What it does:** Cleans the raw text.
+* **Technical Details:** Removes non-ASCII characters and fixes hidden formatting artifacts (like invisible Unicode characters) to prevent downstream regex rules from breaking.
 
-### Step 3: Section Segmentation (Contextual Splitting)
-* **What it does:** Slices the document into two distinct halves based on keyword triggers.
-* **Technical Details:** Splits the text at the phrase "Nice to Have" (case-insensitive).
-* **Why it matters:** Allows the AI to understand the *context* of a skill. A skill found in the top half is categorized as a strict requirement; a skill in the bottom half is a bonus.
+### Step 3: Core Information Extraction
+* **What it does:** Extracts non-negotiable parameters like Experience and Education.
+* **Technical Details:** Uses advanced Regex to extract exact integers for experience (e.g., "3-5 years" becomes `min: 3, max: 5`) and flags domain-specific degrees (e.g., CFA, CA, MBA, Bachelor's in Finance).
 
-### Step 4: The Synonym Engine (Skill Normalization)
-* **What it does:** Translates HR jargon into standardized technical terms.
-* **Technical Details:** The engine loops through the split text and checks it against `synonyms_db.json`. It uses word boundary Regex (`\b`) to ensure exact matches.
-* **Example:** If the JD asks for "ML", the engine maps it to "Machine Learning" to ensure the candidate matching system doesn't unfairly penalize a candidate.
+### Step 4: Section Segmentation
+* **What it does:** Slices the document based on requirement strictness.
+* **Technical Details:** Splits the text at the phrase "Nice to Have". Skills in the top half are categorized as mandatory; skills in the bottom half are bonuses.
 
-### Step 5: JSON Generation & Export
-* **What it does:** Packages the extracted data into the Day 4 `job_description_schema.json` structure.
-* **Output Location:** Saves the finalized file to `data/processed/sample_jd_parsed.json`.
+### Step 5: The Synonym Engine (Skill Normalization)
+* **What it does:** Translates HR jargon into standardized technical terms using `synonyms_db.json`.
+* **Technical Details:** Uses word boundary Regex (`\b`) to ensure exact matches. If the JD asks for "DCF", the engine maps it to the standardized skill "Valuation".
+
+### Step 6: Master Database Aggregation
+* **What it does:** Compiles all parsed jobs into a single queryable file.
+* **Output Location:** Saves the finalized array of all jobs to `data/processed/master_jobs_db.json`.
 
 ---
 
@@ -44,4 +42,4 @@ To add new skills or synonyms without modifying the core Python code:
 1. Open `data/synonyms_db.json`.
 2. Add the official skill as the Key, and an array of variations as the Value.
    ```json
-   "NodeJS": ["Node.js", "NodeJS", "Node"]
+   "Valuation": ["valuation", "valuations", "DCF", "intrinsic value", "P/E"]

@@ -1,0 +1,30 @@
+DAY 10 EXPERIENCE RELEVANCE ENGINE REPORT
+--------------------------------------------------
+Date: 2026-03-10
+Tester: Murthaja
+Status: SUCCESS
+
+TEST CASE 1: experienced_resume.pdf
+Target Role: Quantitative Equity Analyst (Requires 3.0 Years)
+--------------------------------------------------
+1. Date Parsing & Calculation: PASSED
+   - Successfully parsed string dates ("01/2022 - Present", "05/2020 - 12/2021").
+   - Correctly calculated total raw experience: 68 months (5.7 years).
+
+2. Gap & Overlap Detection: PASSED
+   - Scanned timeline for >6 month employment gaps.
+   - Output: [] (No gaps detected).
+
+3. Role Similarity & Effective Experience: VERIFIED
+   - Detected Past Role: Data Analyst.
+   - Applied Similarity Matrix Modifier: 0.8 (Data Analyst -> Quant Equity Analyst).
+   - Calculated Effective Relevant Experience: 4.5 Years.
+
+4. Final Experience Match Score: 100%
+   - Candidate's 4.5 effective years comfortably exceeded the 3.0 required years.
+
+CONCLUSION:
+The NLP Timekeeper and Relevance Engine successfully transform raw date strings
+into mathematical durations, discounting irrelevant experience to prevent 
+false-positive hiring metrics.
+--------------------------------------------------

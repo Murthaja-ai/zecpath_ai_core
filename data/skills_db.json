@@ -76,6 +76,37 @@
         "category": "Tool",
         "aliases": ["vscode", "visual studio code"],
         "related_skills": []
+    },
+    {
+        "name": "Financial Modeling",
+        "category": "Finance",
+        "aliases": ["financial models", "modeling", "3-statement model"],
+        "related_skills": ["Excel", "Valuation"]
+    },
+    {
+        "name": "Valuation",
+        "category": "Finance",
+        "aliases": ["valuations", "dcf", "intrinsic value", "comparable companies"],
+        "related_skills": ["Financial Modeling"]
+    },
+    {
+        "name": "Equity Research",
+        "category": "Finance",
+        "aliases": ["equity analysis", "stock analysis", "fundamental analysis"],
+        "related_skills": ["Financial Modeling", "Peer Comparison"]
+    },
+    {
+        "name": "SEBI Regulations",
+        "category": "Business Skill",
+        "aliases": ["sebi", "regulatory compliance", "compliance"],
+        "related_skills": []
+    },
+    {
+        "name": "Excel",
+        "category": "Tool",
+        "aliases": ["ms excel", "spreadsheets", "advanced excel"],
+        "related_skills": ["Financial Modeling", "Data Analysis"]
     }
+
     
 ]

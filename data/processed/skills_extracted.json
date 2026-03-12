@@ -1,6 +1,6 @@
 {
-    "filename": "sample_resume.pdf",
-    "total_skills_found": 27,
+    "filename": "experienced_resume.pdf",
+    "total_skills_found": 22,
     "extracted_skills": {
         "technical_skills": [
             {
@@ -32,15 +32,15 @@
                 "confidence": 1.0
             },
             {
-                "skill": "R",
+                "skill": "VS Code",
                 "confidence": 1.0
             },
             {
-                "skill": "Statistics",
+                "skill": "Excel",
                 "confidence": 1.0
             },
             {
-                "skill": "Machine Learning",
+                "skill": "Financial Modeling",
                 "confidence": 0.9
             },
             {
@@ -72,22 +72,6 @@
                 "confidence": 0.5
             },
             {
-                "skill": "Scikit-Learn",
-                "confidence": 0.5
-            },
-            {
-                "skill": "TensorFlow",
-                "confidence": 0.5
-            },
-            {
-                "skill": "Keras",
-                "confidence": 0.5
-            },
-            {
-                "skill": "PyTorch",
-                "confidence": 0.5
-            },
-            {
                 "skill": "Database Management",
                 "confidence": 0.5
             },
@@ -104,16 +88,11 @@
                 "confidence": 0.5
             },
             {
-                "skill": "Hypothesis Testing",
+                "skill": "Valuation",
                 "confidence": 0.5
             }
         ],
         "business_skills": [],
-        "soft_skills": [
-            {
-                "skill": "Problem Solving",
-                "confidence": 1.0
-            }
-        ]
+        "soft_skills": []
     }
 }
