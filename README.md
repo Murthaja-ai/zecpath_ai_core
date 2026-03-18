@@ -29,7 +29,7 @@ zecpath_ai_core/
 ├── METADATA_STANDARDS.md  # Documentation for data normalization
 ├── PIPELINE_DIAGRAM.md    # Visual flow of the ATS processing
 └── STORAGE_ARCHITECTURE.md# Polyglot storage design specs
-
+```
 ## 🚀 Setup & Installation
 1. Clone the repository
 git clone https://github.com/Murthaja-ai/zecpath_ai_core.git
