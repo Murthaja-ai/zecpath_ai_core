@@ -11,7 +11,7 @@ Our candidate processing is broken down into independent AI-driven microservices
 3. **Experience Relevance Engine (Day 10):** A sophisticated time-series parser that calculates precise employment durations, detects overlapping jobs (preventing double-counting), flags employment gaps, and uses a Role Similarity Matrix to discount irrelevant past experience against target FinTech roles.
 
 ## 📂 Repository Structure
-'''
+```
 zecpath_ai_core/
 ├── data/
 │   ├── processed/         # Structured JSON outputs (Scores, Parsed Profiles)
@@ -29,7 +29,6 @@ zecpath_ai_core/
 ├── METADATA_STANDARDS.md  # Documentation for data normalization
 ├── PIPELINE_DIAGRAM.md    # Visual flow of the ATS processing
 └── STORAGE_ARCHITECTURE.md# Polyglot storage design specs
-'''
 
 ## 🚀 Setup & Installation
 1. Clone the repository
