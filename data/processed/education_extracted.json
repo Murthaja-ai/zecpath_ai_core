@@ -1,0 +1,23 @@
+{
+    "candidate_file": "experienced_resume.pdf",
+    "academic_profile": [
+        {
+            "degree_level": "Bachelors",
+            "field_of_study": "Electronics",
+            "institution": "Anna University",
+            "graduation_year": "2009",
+            "education_relevance_score": 0.8,
+            "raw_text": "Bachelor of Engineering, Electronics and Communication Engineering | May 2005 – May 2009 | Anna University, Chennai, India"
+        }
+    ],
+    "certifications": [
+        {
+            "certification_name": "Data Visualization Challenge | Codebasics | 2nd Rank",
+            "relevance": "General"
+        },
+        {
+            "certification_name": "SQL Intermediate | HackerRank",
+            "relevance": "Highly Relevant to FinTech/Data"
+        }
+    ]
+}
