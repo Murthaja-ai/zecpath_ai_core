@@ -11,13 +11,13 @@ Our candidate processing is broken down into independent AI-driven microservices
 3. **Experience Relevance Engine (Day 10):** A sophisticated time-series parser that calculates precise employment durations, detects overlapping jobs (preventing double-counting), flags employment gaps, and uses a Role Similarity Matrix to discount irrelevant past experience against target FinTech roles.
 
 ## 📂 Repository Structure
-
+```text
 zecpath_ai_core/
 ├── data/
-│   ├── processed/         # Structured JSON outputs (Scores, Parsed Profiles)
-│   ├── schemas/           # Pydantic/JSON validation schemas for ATS data
-│   ├── skills_db.json     # Master taxonomy of tech/finance skills
-│   └── master_jobs_db.json# Normalized database of 67 FinTech Target Roles
+│   ├── processed/         # Structured JSON outputs
+│   ├── schemas/           # Pydantic/JSON validation schemas
+│   ├── skills_db.json     # Master taxonomy
+│   └── master_jobs_db.json# Normalized database of 67 FinTech Roles
 ├── parsers/
 │   ├── parser_engine_v2.py    # Core text extraction logic
 │   ├── resume_segmenter.py    # Document slicing logic
@@ -29,26 +29,36 @@ zecpath_ai_core/
 ├── METADATA_STANDARDS.md  # Documentation for data normalization
 ├── PIPELINE_DIAGRAM.md    # Visual flow of the ATS processing
 └── STORAGE_ARCHITECTURE.md# Polyglot storage design specs
-
+```
 
 ## 🚀 Setup & Installation
-1. Clone the repository
-git clone https://github.com/Murthaja-ai/zecpath_ai_core.git
+
+**1. Clone the repository**
+```bash
+git clone [https://github.com/Murthaja-ai/zecpath_ai_core.git](https://github.com/Murthaja-ai/zecpath_ai_core.git)
 cd zecpath_ai_core
+```
 
-2. Create and activate a Virtual Environment
+**2. Create and activate a Virtual Environment**
+```bash
 python -m venv venv
+# Windows:
 venv\Scripts\activate
+# Mac/Linux:
+source venv/bin/activate
+```
 
-3. Install Dependencies
+**3. Install Dependencies**
+```bash
 pip install -r requirements.txt
-
+```
 
 ## 💻 Execution Modules
 The pipeline is designed to be executed modularly for testing. Run the orchestrator scripts from the root directory:
-* python run_day8.py -> Tests the Document Segmentation engine.
-* python run_day9.py -> Tests the Skill Extraction & Confidence Scoring.
-* python run_day10.py -> Tests the Timekeeper & Relevance Matrix.
+* `python run_day8.py` -> Tests the Document Segmentation engine.
+* `python run_day9.py` -> Tests the Skill Extraction & Confidence Scoring.
+* `python run_day10.py` -> Tests the Timekeeper & Relevance Matrix.
+* `python run_day11.py` -> Tests the Education & Certification Engine.
 
 ## 🔐 Confidentiality Notice
 This repository contains proprietary data engineering pipelines for the Zecpath platform. Please refer to NDA guidelines before replicating scoring logic or taxonomy databases.
