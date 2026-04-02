@@ -1,0 +1,34 @@
+{
+    "roles": {
+        "junior": {
+            "description": "0-2 years experience. High emphasis on skills, projects, and education.",
+            "weights": {
+                "skills": 0.45,
+                "experience": 0.15,
+                "projects": 0.20,
+                "education": 0.20
+            }
+        },
+        "mid_level": {
+            "description": "3-5 years experience. Balanced emphasis on real-world experience and skills.",
+            "weights": {
+                "skills": 0.40,
+                "experience": 0.40,
+                "projects": 0.10,
+                "education": 0.10
+            }
+        },
+        "senior": {
+            "description": "5+ years experience. Massive emphasis on past experience and architectural skills.",
+            "weights": {
+                "skills": 0.30,
+                "experience": 0.60,
+                "projects": 0.05,
+                "education": 0.05
+            }
+        }
+    },
+    "fallback_rules": {
+        "if_missing_education": "Distribute education weight evenly among skills and experience."
+    }
+}

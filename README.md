@@ -11,6 +11,7 @@ Our candidate processing is broken down into independent AI-driven microservices
 3. **Experience Relevance Engine (Day 10):** A sophisticated time-series parser that calculates precise employment durations, detects overlapping jobs, flags employment gaps, and uses a Role Similarity Matrix to discount irrelevant past experience.
 4. **Education & Certification Engine (Day 11):** Extracts academic credentials, standardizes degree hierarchies, and identifies high-value FinTech certifications.
 5. **Semantic Matching Engine (Day 12):** The AI "Brain" of the ATS. Utilizes `sentence-transformers` to generate mathematical text embeddings. Performs semantic skill gap analysis and calculates a holistic candidate match score against specific Job Descriptions.
+6. **Dynamic Scoring Framework (Day 13):** A configurable, rule-based engine that applies role-specific mathematical weights to raw scores, handles missing data gracefully, and generates legally defensible audit trails.
 
 ## 📂 Repository Structure
 ```text
