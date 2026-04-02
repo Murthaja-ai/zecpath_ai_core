@@ -1,0 +1,47 @@
+[
+    {
+        "jd_id": "JD_001",
+        "jd_role": "Quantitative Analyst",
+        "candidate_id": "CAND_001",
+        "scores": {
+            "skill_match": 0.511,
+            "experience_match": 0.634,
+            "project_match": 0.329,
+            "composite_score": 0.511
+        },
+        "skill_gap": {
+            "matched": [
+                "Python",
+                "Machine Learning",
+                "SQL"
+            ],
+            "missing": [
+                "Statistical Modeling",
+                "Data Visualization"
+            ]
+        },
+        "recommendation": "Moderate Match \u2014 Consider"
+    },
+    {
+        "jd_id": "JD_002",
+        "jd_role": "React Front-End Developer",
+        "candidate_id": "CAND_001",
+        "scores": {
+            "skill_match": 0.228,
+            "experience_match": 0.11,
+            "project_match": 0.061,
+            "composite_score": 0.159
+        },
+        "skill_gap": {
+            "matched": [],
+            "missing": [
+                "JavaScript",
+                "React",
+                "CSS",
+                "HTML",
+                "UI/UX Design"
+            ]
+        },
+        "recommendation": "Poor Match \u2014 Reject"
+    }
+]
