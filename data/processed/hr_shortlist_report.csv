@@ -1,0 +1,6 @@
+ats_rank,ats_percentile,candidate_name,final_percentage,ats_status,ats_action,recruiter_note
+1,80.0,Alice (The Expert),82.5,Shortlisted,Schedule First-Round Interview,"Shortlisted due to 82.5% total match. (Skills: 90%, Exp: 80%)"
+2,60.0,Bob (The Generalist),82.5,Shortlisted,Schedule First-Round Interview,"Shortlisted due to 82.5% total match. (Skills: 85%, Exp: 85%)"
+3,40.0,Eve (The Solid Mid),76.0,Shortlisted,Schedule First-Round Interview,"Shortlisted due to 76.0% total match. (Skills: 80%, Exp: 70%)"
+4,20.0,Charlie (The Junior),60.0,Needs Review,Recruiter to manually review edge cases,"Needs Review due to 60.0% total match. (Skills: 65%, Exp: 30%)"
+5,0.0,David (The Intern),45.0,Rejected,Send automated rejection email,"Rejected due to 45.0% total match. (Skills: 40%, Exp: 10%)"

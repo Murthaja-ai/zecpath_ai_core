@@ -1,0 +1,27 @@
+{
+    "thresholds": {
+        "auto_shortlist": {
+            "min_score": 75.0,
+            "status_label": "Shortlisted",
+            "recommended_action": "Schedule First-Round Interview",
+            "color_code": "GREEN"
+        },
+        "manual_review": {
+            "min_score": 50.0,
+            "max_score": 74.99,
+            "status_label": "Needs Review",
+            "recommended_action": "Recruiter to manually review edge cases",
+            "color_code": "YELLOW"
+        },
+        "auto_reject": {
+            "max_score": 49.99,
+            "status_label": "Rejected",
+            "recommended_action": "Send automated rejection email",
+            "color_code": "RED"
+        }
+    },
+    "ranking_config": {
+        "max_shortlist_size": 10,
+        "tie_breaker_priority": ["skills", "experience", "semantic_similarity"]
+    }
+}
