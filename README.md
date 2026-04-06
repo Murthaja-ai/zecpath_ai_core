@@ -14,15 +14,18 @@ Our candidate processing is broken down into independent AI-driven microservices
 6. **Dynamic Scoring Framework (Day 13):** A configurable, rule-based engine that applies role-specific mathematical weights to raw scores, handles missing data gracefully, and generates legally defensible audit trails.
 7. **Candidate Ranking & Shortlisting (Day 14):** An automated HR factory that sorts candidates, resolves tie-breakers, applies configurable threshold zones (Shortlist/Review/Reject), and exports recruiter-friendly CSV reports
 8. **Enterprise Governance Pipeline (Day 15):** The final security and ethics layer. Implements PII anonymization for blind hiring, Min-Max statistical curve grading, and algorithmic anti-cheat detection for keyword stuffing.
+9. **API Architecture & Integration (Day 16):** The RESTful API blueprint. Defines asynchronous job polling mechanics, request/response JSON schemas, rate-limiting security, and HTTP error standards for seamless frontend integration.
 
 ## 📂 Repository Structure
 ```text
 zecpath_ai_core/
+├── docs/
+│   └── api_specification.md   # REST API contracts & integration flow
 ├── data/
-│   ├── processed/         # Structured JSON outputs & Accuracy Reports
-│   ├── schemas/           # Pydantic/JSON validation schemas
-│   ├── skills_db.json     # Master taxonomy
-│   └── master_jobs_db.json# Normalized database of 67 FinTech Roles
+│   ├── processed/             # Structured JSON outputs & Accuracy Reports
+│   ├── schemas/               # Pydantic/JSON validation schemas
+│   ├── skills_db.json         # Master taxonomy
+│   └── master_jobs_db.json    # Normalized database of 67 FinTech Roles
 ├── parsers/
 │   ├── parser_engine_v2.py    # Core text extraction logic
 │   ├── resume_segmenter.py    # Document slicing logic
