@@ -15,12 +15,14 @@ Our candidate processing is broken down into independent AI-driven microservices
 7. **Candidate Ranking & Shortlisting (Day 14):** An automated HR factory that sorts candidates, resolves tie-breakers, applies configurable threshold zones (Shortlist/Review/Reject), and exports recruiter-friendly CSV reports
 8. **Enterprise Governance Pipeline (Day 15):** The final security and ethics layer. Implements PII anonymization for blind hiring, Min-Max statistical curve grading, and algorithmic anti-cheat detection for keyword stuffing.
 9. **API Architecture & Integration (Day 16):** The RESTful API blueprint. Defines asynchronous job polling mechanics, request/response JSON schemas, rate-limiting security, and HTTP error standards for seamless frontend integration.
+10. **QA & System Testing (Day 17):** Conducted rigorous precision/recall testing across diverse edge-case personas (Freshers, Senior Executives, Career Pivots) against human manual review to identify algorithm biases and generate a v2.0 improvement backlog.
 
 ## 📂 Repository Structure
 ```text
 zecpath_ai_core/
 ├── docs/
 │   └── api_specification.md   # REST API contracts & integration flow
+│   └── qa_testing_report.md   # Day 17 Accuracy Metrics & v2 Backlog
 ├── data/
 │   ├── processed/             # Structured JSON outputs & Accuracy Reports
 │   ├── schemas/               # Pydantic/JSON validation schemas
