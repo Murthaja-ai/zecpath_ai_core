@@ -5,6 +5,7 @@ import spacy
 import json
 import os
 import csv
+import concurrent.futures  # <-- NEW: Added for parallel processing
 from text_cleaner import clean_text  # Import your new helper
 
 # Load AI Model
@@ -92,9 +93,13 @@ def parse_resume(file_path):
     for ent in doc.ents:
         if ent.label_ == "PERSON":
             # FILTER 1: Clean the text and remove anything after a newline
-            # OLD LINE: name_candidate = ent.text.strip()
-            # NEW LINE (The Fix):
             name_candidate = ent.text.strip().split('\n')[0]
+            
+            # --- NEW DAY 18 FILTER: Refine Entity Detection ---
+            # Reject the name if it contains numbers or is absurdly long
+            if any(char.isdigit() for char in name_candidate) or len(name_candidate) > 30:
+                continue
+            # --------------------------------------------------
             
             # FILTER 2: Is it a skill? (e.g., "Python")
             if name_candidate in SKILLS_DB:
@@ -127,6 +132,29 @@ def parse_resume(file_path):
 
     return data
 
+def process_single_file(file_path, output_folder):
+    """
+    Helper function designed to be run in parallel.
+    Processes one file, saves the JSON, and returns the row data for the CSV.
+    """
+    filename = os.path.basename(file_path)
+    try:
+        result = parse_resume(file_path)
+        if result:
+            # Save JSON
+            json_name = filename.rsplit('.', 1)[0] + ".json"
+            with open(os.path.join(output_folder, json_name), 'w') as jf:
+                json.dump(result, jf, indent=4)
+            
+            # Return data for the CSV logger
+            return [filename, "SUCCESS", result['name'], result['email'], len(result['skills'])]
+        else:
+            return [filename, "FAILED", "", "", 0]
+    except Exception as e:
+        print(f"⚠️ Crash processing {filename}: {str(e)}")
+        # Fail gracefully without crashing the whole batch
+        return [filename, "ERROR", "", "", 0]
+
 if __name__ == "__main__":
     # Define Paths
     base_dir = os.path.dirname(os.path.dirname(__file__)) # Go up to project root
@@ -139,36 +167,33 @@ if __name__ == "__main__":
     # CSV Log File for Reporting
     log_file = os.path.join(output_folder, "parsing_report.csv")
     
-    print(f"🚀 Zecpath Parser V2 Starting...")
+    print(f"🚀 Zecpath Parser V2.1 (Optimized Multi-threading) Starting...")
     print(f"📂 Reading from: {input_folder}")
     
+    # Pre-filter files to avoid hidden system files like .DS_Store
+    valid_files = []
+    if os.path.exists(input_folder):
+        for filename in os.listdir(input_folder):
+            if filename.endswith((".pdf", ".docx")) and not filename.startswith('.'):
+                valid_files.append(os.path.join(input_folder, filename))
+    
+    print(f"⚙️ Found {len(valid_files)} valid resumes. Commencing batch extraction...")
+
     with open(log_file, 'w', newline='', encoding='utf-8') as f:
         writer = csv.writer(f)
         # Header Row
         writer.writerow(["Filename", "Status", "Name", "Email", "Skill Count"])
 
-        # Loop through all files
-        if os.path.exists(input_folder):
-            for filename in os.listdir(input_folder):
-                if filename.endswith((".pdf", ".docx")):
-                    file_path = os.path.join(input_folder, filename)
-                    
-                    print(f"Processing: {filename}...")
-                    result = parse_resume(file_path)
-                    
-                    if result:
-                        # Success!
-                        # 1. Save JSON
-                        json_name = filename.rsplit('.', 1)[0] + ".json"
-                        with open(os.path.join(output_folder, json_name), 'w') as jf:
-                            json.dump(result, jf, indent=4)
-                        
-                        # 2. Log to CSV
-                        writer.writerow([filename, "SUCCESS", result['name'], result['email'], len(result['skills'])])
-                    else:
-                        # Failure (Empty file or error)
-                        writer.writerow([filename, "FAILED", "", "", 0])
-        else:
-            print("❌ Error: 'data/raw_resumes' folder not found.")
+        # THE ENTERPRISE UPGRADE: Parallel Processing
+        # max_workers=10 means processing 10 resumes simultaneously
+        with concurrent.futures.ThreadPoolExecutor(max_workers=10) as executor:
+            # Schedule all files to be processed
+            futures = {executor.submit(process_single_file, path, output_folder): path for path in valid_files}
+            
+            # As each file finishes processing, log its result to the CSV
+            for future in concurrent.futures.as_completed(futures):
+                row_data = future.result()
+                writer.writerow(row_data)
+                print(f"✅ Finished: {row_data[0]}")
 
-    print(f"\n✅ Done! Check the 'data/processed' folder for results.")
+    print(f"\n🏁 Done! Processed {len(valid_files)} resumes at maximum speed. Check 'data/processed' for results.")
