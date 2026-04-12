@@ -1,0 +1,7 @@
+{
+  "role": "Data Scientist",
+  "role_level": "mid_level",
+  "required_skills": ["Python", "SQL", "Tableau", "Machine Learning", "Statistics", "Pandas", "NumPy"],
+  "experience_years": 4.0,
+  "responsibilities": "Design statistical models, build machine learning pipelines, and create data visualizations."
+}

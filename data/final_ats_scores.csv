@@ -1,0 +1,9 @@
+Filename,Final_Score,Matched_Skills,Missing_Skills
+education_extracted.json,46.8,,"Python, Machine Learning, Statistical Modeling, SQL, Data Visualization"
+experienced_resume_segmented.json,46.8,,"Python, Machine Learning, Statistical Modeling, SQL, Data Visualization"
+experience_extracted.json,46.8,,"Python, Machine Learning, Statistical Modeling, SQL, Data Visualization"
+experience_scored.json,46.8,,"Python, Machine Learning, Statistical Modeling, SQL, Data Visualization"
+JANUSHREE-S.json,75.8,"Python, Machine Learning, Statistical Modeling, SQL",Data Visualization
+sample_resume.json,75.8,"Python, Machine Learning, Statistical Modeling, SQL",Data Visualization
+sample_resume_segmented.json,46.8,,"Python, Machine Learning, Statistical Modeling, SQL, Data Visualization"
+skills_extracted.json,46.8,,"Python, Machine Learning, Statistical Modeling, SQL, Data Visualization"
