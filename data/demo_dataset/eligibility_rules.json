@@ -1,0 +1,22 @@
+{
+  "Data Scientist": {
+    "min_ats_score": 70.0,
+    "mandatory_skills": ["Python", "SQL"],
+    "experience": {
+      "min_years": 2,
+      "max_years": 10
+    },
+    "allowed_locations": ["Bangalore", "Remote", "Dubai"],
+    "availability_required": true
+  },
+  "Quantitative Analyst": {
+    "min_ats_score": 75.0,
+    "mandatory_skills": ["Python", "Machine Learning", "Statistical Modeling"],
+    "experience": {
+      "min_years": 3,
+      "max_years": 8
+    },
+    "allowed_locations": ["New York", "London", "Remote"],
+    "availability_required": true
+  }
+}

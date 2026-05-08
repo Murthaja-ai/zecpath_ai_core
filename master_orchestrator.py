@@ -3,6 +3,7 @@ import json
 import csv
 from parsers.semantic_engine import SemanticEngine
 from parsers.scoring_engine import ScoringEngine
+from parsers.eligibility_engine import EligibilityEngine
 
 def stream_candidates(processed_folder):
     """
@@ -22,6 +23,8 @@ def stream_candidates(processed_folder):
                     
                     # 🛡️ DEFENSIVE PROGRAMMING: Only process if it's a Dictionary
                     if isinstance(candidate_data, dict):
+                        # Ensure filename is passed down so the Eligibility Engine can log it
+                        candidate_data["filename"] = filename 
                         yield filename, candidate_data 
                     else:
                         print(f"⏭️ Skipping {filename}: Not a valid candidate dictionary format.")
@@ -30,14 +33,16 @@ def stream_candidates(processed_folder):
                 print(f"⚠️ Could not read {filename}: {e}")
 
 def run_master_orchestrator():
-    print("🚀 Booting up the Zecpath Master Orchestrator V3.1 (Developer Mode)...")
+    print("🚀 Booting up the Zecpath Master Orchestrator V4.1 (Eligibility Mode)...")
     
+    # Initialize all our AI and Logic Engines
     semantic_engine = SemanticEngine()
     scoring_engine = ScoringEngine()
+    eligibility_engine = EligibilityEngine()
     
-    # 1. THE JOB DESCRIPTION (Developer Hardcoded Test)
+    # 1. THE JOB DESCRIPTION
     jd_requirements = {
-        "role": "Quantitative Analyst",
+        "role": "Data Scientist", # Matches our Day 21 JSON Rules!
         "role_level": "mid_level",
         "required_skills": ["Python", "Machine Learning", "Statistical Modeling", "SQL", "Data Visualization"],
     }
@@ -50,14 +55,15 @@ def run_master_orchestrator():
     
     with open(results_file, mode='w', newline='', encoding='utf-8') as file:
         writer = csv.writer(file)
-        writer.writerow(["Filename", "Final_Score", "Matched_Skills", "Missing_Skills"])
+        # Added Day 21 Eligibility Columns
+        writer.writerow(["Filename", "Final_Score", "Eligibility", "Reason", "Matched_Skills", "Missing_Skills"])
         
         count = 0
         for filename, candidate_data in stream_candidates(processed_folder):
             count += 1
             
-            # Extract skills safely
-            candidate_skills = candidate_data.get("skills", [])
+            # Extract skills safely for semantic gap analysis
+            raw_candidate_skills = candidate_data.get("skills", [])
             
             # Simulated scores for developer testing
             candidate_exp_score = 0.85 
@@ -65,7 +71,7 @@ def run_master_orchestrator():
             edu_score = 0.5
             
             # SEMANTIC GAP ANALYSIS
-            skill_analysis = semantic_engine.analyze_skill_gap(candidate_skills, jd_requirements["required_skills"])
+            skill_analysis = semantic_engine.analyze_skill_gap(raw_candidate_skills, jd_requirements["required_skills"])
             
             # PREPARE RAW SCORES
             raw_scores = {
@@ -79,13 +85,40 @@ def run_master_orchestrator():
             scoring_result = scoring_engine.calculate_final_score(jd_requirements["role_level"], raw_scores)
             final_score_percent = round(scoring_result['final_score'] * 100, 1)
             
+            # --- DAY 21 ELIGIBILITY ENGINE PLUG-IN ---
+            # 🧠 Semantic Bridge: Pass the Semantic AI's 'matched' skills to the Gatekeeper!
+            candidate_data["skills"] = skill_analysis["matched"] 
+            
+            eligibility_result = eligibility_engine.evaluate_candidate(
+                candidate_data=candidate_data, 
+                ats_score=final_score_percent, 
+                role_name=jd_requirements["role"]
+            )
+            
+            decision = eligibility_result["eligibility_status"]
+            # Convert the checks dictionary into a readable string for the CSV
+            reason = str(eligibility_result["checks"])
+            # -----------------------------------------
+            
+            # Write to CSV
             writer.writerow([
                 filename, 
                 final_score_percent,
+                decision,
+                reason,
                 ", ".join(skill_analysis['matched']),
                 ", ".join(skill_analysis['missing'])
             ])
-            print(f"✅ Scored {filename} -> {final_score_percent}%")
+            
+            # Terminal UI colors
+            if decision == "Eligible":
+                status = "🟢 ELIGIBLE"
+            elif decision == "Review":
+                status = "🟡 REVIEW"
+            else:
+                status = "🔴 REJECTED"
+                
+            print(f"✅ Scored {filename} -> {final_score_percent}% | {status}")
 
     print(f"\n🏁 Finished processing {count} candidates with 0% memory bloat!")
     print(f"📁 Developer Report saved to: {results_file}")

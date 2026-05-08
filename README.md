@@ -19,6 +19,7 @@ Our candidate processing is broken down into independent AI-driven microservices
 11. **Production Optimization (Day 18):** Refactored the architecture for Enterprise scale. Implemented Multithreading for 10x faster PDF extraction, `@lru_cache` to eliminate redundant AI vector math, and Python Generators (`yield`) to maintain 1% flat memory usage across massive data batches.
 12. **Knowledge Transfer (Day 19):** Drafted comprehensive Enterprise documentation, including system architecture diagrams, scoring logic breakdowns, and a developer troubleshooting guide to ensure team scalability and eliminate a Bus Factor of 1.
 13. **Production Handover (Day 20):** Finalized the system for Enterprise deployment. Created a controlled synthetic dataset for secure live demonstrations and authored the Executive Evaluation Report summarizing the architecture, optimization, and business value of the ATS.
+14. **Eligibility Decision Engine (Day 21):** The automated HR Gatekeeper. Applies strict business logic (location, experience constraints, mandatory skills) via decoupled JSON configurations. Features a Semantic Bridge to recognize AI-inferred skills and a 15-point mathematical grace period to safely flag borderline candidates for human review instead of auto-rejection.
 
 ## 📂 Repository Structure
 ```text
@@ -31,11 +32,15 @@ zecpath_ai_core/
 │   └── developer_guide.md             # Day 19 Setup & troubleshooting
 │   └── final_evaluation_report.md     #  Day 20 Executive summary & portfolio piece
 ├── data/
-│   ├── processed/             # Structured JSON outputs & Accuracy Reports
+│   ├── processed/             # Structured JSON outputs & Accuracy 
+Reports
+│   ├── demo_dataset/          
+│   │   └── eligibility_rules.json # Day 21: Decoupled HR business logic configuration
 │   ├── schemas/               # Pydantic/JSON validation schemas
 │   ├── skills_db.json         # Master taxonomy
 │   └── master_jobs_db.json    # Normalized database of 67 FinTech Roles
 ├── parsers/
+│   ├── eligibility_engine.py  # Day 21: Rule-based Gatekeeper with missing-data safety net
 │   ├── parser_engine_v2.py    # Core text extraction logic
 │   ├── resume_segmenter.py    # Document slicing logic
 │   ├── skill_extractor.py     # Skill matching and confidence scoring
