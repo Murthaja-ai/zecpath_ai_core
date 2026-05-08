@@ -32,8 +32,7 @@ zecpath_ai_core/
 │   └── developer_guide.md             # Day 19 Setup & troubleshooting
 │   └── final_evaluation_report.md     #  Day 20 Executive summary & portfolio piece
 ├── data/
-│   ├── processed/             # Structured JSON outputs & Accuracy 
-Reports
+│   ├── processed/             # Structured JSON outputs & Accuracy Reports
 │   ├── demo_dataset/          
 │   │   └── eligibility_rules.json # Day 21: Decoupled HR business logic configuration
 │   ├── schemas/               # Pydantic/JSON validation schemas
