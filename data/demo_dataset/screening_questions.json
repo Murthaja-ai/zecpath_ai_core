@@ -1,0 +1,159 @@
+{
+  "metadata": {
+    "version": "1.1",
+    "purpose": "Automated HR Pre-Screening",
+    "supported_languages": ["en", "hi", "ml"]
+  },
+  "question_bank": {
+    "Introduction": [
+      {
+        "question_id": "intro_01",
+        "text": {
+          "en": "Hello, am I speaking with {candidate_name}?",
+          "hi": "नमस्ते, क्या मेरी बात {candidate_name} से हो रही है?",
+          "ml": "നമസ്കാരം, ഞാൻ {candidate_name} മായിട്ടാണോ സംസാരിക്കുന്നത്?"
+        },
+        "expected_answer_type": "boolean_confirmation",
+        "is_mandatory": true,
+        "scoring_weight": 5,
+        "follow_up": [
+          "Can you briefly introduce yourself?",
+          "What motivates you in your career?"
+        ],
+        "evaluation_criteria": [
+          "clarity",
+          "confidence",
+          "communication"
+        ]
+      }
+    ],
+    "Education": [
+      {
+        "question_id": "edu_01",
+        "text": {
+          "en": "I see you have a background in {degree_field}. How has that academic experience prepared you for the technical challenges of this specific role?",
+          "hi": "मैंने देखा है कि आपकी शिक्षा {degree_field} में है। उस शैक्षणिक अनुभव ने आपको इस विशेष भूमिका की तकनीकी चुनौतियों के लिए कैसे तैयार किया है?",
+          "ml": "നിങ്ങൾക്ക് {degree_field} ൽ വിദ്യാഭ്യാസ പശ്ചാത്തലമുണ്ടെന്ന് ഞാൻ കാണുന്നു. ഈ റോളിന്റെ സാങ്കേതിക വെല്ലുവിളികൾക്കായി ആ അക്കാദമിക് അനുഭവം നിങ്ങളെ എങ്ങനെ സജ്ജമാക്കി?"
+        },
+        "expected_answer_type": "contextual_explanation",
+        "is_mandatory": true,
+        "scoring_weight": 10,
+        "follow_up": [
+          "What was your favorite subject and why?",
+          "Did you complete any major academic projects?"
+        ],
+        "evaluation_criteria": [
+          "academic_relevance",
+          "articulation"
+        ]
+      }
+    ],
+    "Experience": [
+      {
+        "question_id": "exp_01",
+        "text": {
+          "en": "Could you briefly walk me through your most recent project and your specific technical contributions?",
+          "hi": "क्या आप मुझे अपने सबसे हालिया प्रोजेक्ट और उसमें आपके तकनीकी योगदान के बारे में बता सकते हैं?",
+          "ml": "നിങ്ങളുടെ ഏറ്റവും പുതിയ പ്രോജക്റ്റിനെക്കുറിച്ചും അതിൽ നിങ്ങളുടെ സാങ്കേതിക സംഭാവനകളെക്കുറിച്ചും ചുരുക്കത്തിൽ പറയാമോ?"
+        },
+        "expected_answer_type": "technical_summary",
+        "is_mandatory": true,
+        "scoring_weight": 20,
+        "follow_up": [
+          "What was your most recent role?",
+          "Can you describe a major challenge you overcame?"
+        ],
+        "evaluation_criteria": [
+          "accuracy",
+          "relevance",
+          "problem-solving"
+        ]
+      }
+    ],
+    "Skills": [
+      {
+        "question_id": "skill_dynamic_01",
+        "text": {
+          "en": "Our AI analysis of your resume highlighted strong overall experience, but we didn't see much detail regarding {missing_skill}. Can you tell me about your practical experience with that?",
+          "hi": "हमारे एआई विश्लेषण ने आपके समग्र अनुभव को तो सराहा है, लेकिन हमें {missing_skill} के बारे में ज्यादा जानकारी नहीं मिली। क्या आप इसके व्यावहारिक अनुभव के बारे में बता सकते हैं?",
+          "ml": "ഞങ്ങളുടെ AI നിങ്ങളുടെ റെസ്യൂമെ പരിശോധിച്ചതിൽ മികച്ച അനുഭവപരിചയം കണ്ടെത്തി, എന്നാൽ {missing_skill} സംബന്ധിച്ച വിവരങ്ങൾ കുറവാണ്. ഇതിലുള്ള നിങ്ങളുടെ പ്രായോഗിക പരിചയത്തെക്കുറിച്ച് പറയാമോ?"
+        },
+        "expected_answer_type": "technical_explanation",
+        "is_mandatory": true,
+        "scoring_weight": 25,
+        "follow_up": [
+          "Where did you apply this skill practically?",
+          "How would you rate your proficiency out of 10?"
+        ],
+        "evaluation_criteria": [
+          "technical_depth",
+          "honesty",
+          "practical_application"
+        ]
+      }
+    ],
+    "Location": [
+      {
+        "question_id": "loc_01",
+        "text": {
+          "en": "This role requires you to be based in {job_location}. Are you currently located there, or willing to relocate immediately?",
+          "hi": "इस भूमिका के लिए आपको {job_location} में रहना होगा। क्या आप वर्तमान में वहां स्थित हैं, या तुरंत स्थानांतरित होने के लिए तैयार हैं?",
+          "ml": "ഈ ജോലിക്ക് നിങ്ങൾ {job_location} ൽ ആയിരിക്കണം. നിങ്ങൾ ഇപ്പോൾ അവിടെയാണോ ഉള്ളത്, അതോ ഉടൻ തന്നെ അങ്ങോട്ട് മാറാൻ തയ്യാറാണോ?"
+        },
+        "expected_answer_type": "location_status",
+        "is_mandatory": true,
+        "scoring_weight": 10,
+        "follow_up": [
+          "Are you open to hybrid or remote work if required?",
+          "How soon can you relocate?"
+        ],
+        "evaluation_criteria": [
+          "flexibility",
+          "logistical_readiness"
+        ]
+      }
+    ],
+    "Salary": [
+      {
+        "question_id": "sal_01",
+        "text": {
+          "en": "To ensure our expectations are aligned, what are your expected salary requirements for this role?",
+          "hi": "यह सुनिश्चित करने के लिए कि हमारी अपेक्षाएं मेल खाती हैं, इस भूमिका के लिए आपकी वेतन अपेक्षाएं क्या हैं?",
+          "ml": "നമ്മുടെ പ്രതീക്ഷകൾ പൊരുത്തപ്പെടുന്നുണ്ടെന്ന് ഉറപ്പാക്കാൻ, ഈ റോളിനായുള്ള നിങ്ങളുടെ ശമ്പള പ്രതീക്ഷകൾ എന്തൊക്കെയാണ്?"
+        },
+        "expected_answer_type": "numerical_range",
+        "is_mandatory": false,
+        "scoring_weight": 10,
+        "follow_up": [
+          "Is your salary expectation negotiable?",
+          "Are you expecting any joining bonus?"
+        ],
+        "evaluation_criteria": [
+          "budget_alignment",
+          "negotiation_flexibility"
+        ]
+      }
+    ],
+    "Notice_Period": [
+      {
+        "question_id": "notice_01",
+        "text": {
+          "en": "If you are selected to move forward, what is your official notice period or how soon can you join?",
+          "hi": "यदि आपको आगे बढ़ने के लिए चुना जाता है, तो आपका आधिकारिक नोटिस पीरियड क्या है या आप कितनी जल्दी शामिल हो सकते हैं?",
+          "ml": "നിങ്ങളെ തിരഞ്ഞെടുക്കുകയാണെങ്കിൽ, നിങ്ങളുടെ ഔദ്യോഗിക നോട്ടീസ് പിരീഡ് എത്രയാണ് അല്ലെങ്കിൽ എത്ര വേഗം നിങ്ങൾക്ക് ജോലിയിൽ പ്രവേശിക്കാം?"
+        },
+        "expected_answer_type": "timeframe_days",
+        "is_mandatory": true,
+        "scoring_weight": 10,
+        "follow_up": [
+          "Can your notice period be bought out or negotiated?",
+          "Do you have any other pending offers?"
+        ],
+        "evaluation_criteria": [
+          "availability_timeline",
+          "transparency"
+        ]
+      }
+    ]
+  }
+}

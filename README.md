@@ -20,21 +20,23 @@ Our candidate processing is broken down into independent AI-driven microservices
 12. **Knowledge Transfer (Day 19):** Drafted comprehensive Enterprise documentation, including system architecture diagrams, scoring logic breakdowns, and a developer troubleshooting guide to ensure team scalability and eliminate a Bus Factor of 1.
 13. **Production Handover (Day 20):** Finalized the system for Enterprise deployment. Created a controlled synthetic dataset for secure live demonstrations and authored the Executive Evaluation Report summarizing the architecture, optimization, and business value of the ATS.
 14. **Eligibility Decision Engine (Day 21):** The automated HR Gatekeeper. Applies strict business logic (location, experience constraints, mandatory skills) via decoupled JSON configurations. Features a Semantic Bridge to recognize AI-inferred skills and a 15-point mathematical grace period to safely flag borderline candidates for human review instead of auto-rejection.
+15. **HR Screening Dataset Architecture (Day 22):** Designed a centralized, AI-ready JSON "Brain" for the automated Voice Interviewer. Replaced fragmented data files with a single structured dataset featuring conversational categorization, strict LLM listening directives (evaluation criteria, expected answer types), dynamic variable injection (targeting specific skill gaps identified in Day 21), and multilingual future-proofing (English, Hindi, Malayalam)
 
 ## 📂 Repository Structure
 ```text
 zecpath_ai_core/
 ├── docs/
-│   └── api_specification.md   # REST API contracts & integration flow
-│   └── qa_testing_report.md   # Day 17 Accuracy Metrics & v2 Backlog
-│   └── performance_optimization_report.md # Day 18 Scaling upgrades
-│   ├── system_architecture.md         # Day 19 Pipeline diagram & scoring logic
-│   └── developer_guide.md             # Day 19 Setup & troubleshooting
-│   └── final_evaluation_report.md     #  Day 20 Executive summary & portfolio piece
+│   ├── api_specification.md               # REST API contracts & integration flow
+│   ├── qa_testing_report.md               # Day 17 Accuracy Metrics & v2 Backlog
+│   ├── performance_optimization_report.md # Day 18 Scaling upgrades
+│   ├── system_architecture.md             # Day 19 Pipeline diagram & scoring logic
+│   ├── developer_guide.md                 # Day 19 Setup & troubleshooting
+│   └── final_evaluation_report.md         # Day 20 Executive summary & portfolio piece
 ├── data/
 │   ├── processed/             # Structured JSON outputs & Accuracy Reports
 │   ├── demo_dataset/          
 │   │   └── eligibility_rules.json # Day 21: Decoupled HR business logic configuration
+│   │   └── screening_questions.json   # Day 22: Multilingual AI-ready interview script
 │   ├── schemas/               # Pydantic/JSON validation schemas
 │   ├── skills_db.json         # Master taxonomy
 │   └── master_jobs_db.json    # Normalized database of 67 FinTech Roles
