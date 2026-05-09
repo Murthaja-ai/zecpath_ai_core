@@ -1,0 +1,34 @@
+{
+  "session_id": "uuid-placeholder",
+  "metadata": {
+    "candidate_id": "cand_001",
+    "job_id": "job_frontend_01",
+    "interview_date": "2026-05-09T10:00:00Z",
+    "language_detected": "en",
+    "overall_audio_quality": "good"
+  },
+  "normalization_rules_applied": {
+    "remove_filler_words": true,
+    "lowercase_conversion": true,
+    "punctuation_stripped": true
+  },
+  "dialogue_turns": [
+    {
+      "turn_id": 1,
+      "speaker": "AI",
+      "question_id": "skill_dynamic_01",
+      "raw_text": "Our AI analysis highlighted strong overall experience, but we didn't see much detail regarding Data Visualization. Can you tell me about your practical experience with that?",
+      "timestamp": "2026-05-09T10:01:15Z"
+    },
+    {
+      "turn_id": 2,
+      "speaker": "Candidate",
+      "raw_text": "Uhh, yeah, so I actually used, um, Tableau to build a dashboard for the Olist dataset.",
+      "normalized_text": "i actually used tableau to build a dashboard for the olist dataset",
+      "confidence_level": 0.94,
+      "timestamp": "2026-05-09T10:01:28Z",
+      "flagged_for_review": false
+    }
+  ],
+  "session_status": "completed"
+}

@@ -21,6 +21,7 @@ Our candidate processing is broken down into independent AI-driven microservices
 13. **Production Handover (Day 20):** Finalized the system for Enterprise deployment. Created a controlled synthetic dataset for secure live demonstrations and authored the Executive Evaluation Report summarizing the architecture, optimization, and business value of the ATS.
 14. **Eligibility Decision Engine (Day 21):** The automated HR Gatekeeper. Applies strict business logic (location, experience constraints, mandatory skills) via decoupled JSON configurations. Features a Semantic Bridge to recognize AI-inferred skills and a 15-point mathematical grace period to safely flag borderline candidates for human review instead of auto-rejection.
 15. **HR Screening Dataset Architecture (Day 22):** Designed a centralized, AI-ready JSON "Brain" for the automated Voice Interviewer. Replaced fragmented data files with a single structured dataset featuring conversational categorization, strict LLM listening directives (evaluation criteria, expected answer types), dynamic variable injection (targeting specific skill gaps identified in Day 21), and multilingual future-proofing (English, Hindi, Malayalam)
+16. **Transcript Data Architecture (Day 23):** Designed the data pipeline to convert raw voice conversations into structured, AI-ready data. Implemented a Pydantic-powered validation firewall to protect database integrity, a Regex-based text NLP normalizer to clean messy human speech (filler words, trailing punctuation), and defined the SQL database schema for Enterprise storage.
 
 ## 📂 Repository Structure
 ```text
@@ -31,15 +32,23 @@ zecpath_ai_core/
 │   ├── performance_optimization_report.md # Day 18 Scaling upgrades
 │   ├── system_architecture.md             # Day 19 Pipeline diagram & scoring logic
 │   ├── developer_guide.md                 # Day 19 Setup & troubleshooting
-│   └── final_evaluation_report.md         # Day 20 Executive summary & portfolio piece
+│   ├── final_evaluation_report.md         # Day 20 Executive summary & portfolio piece
+│   └── Day23_Metadata_Standards.md        # Transcript data rules and audit standards
 ├── data/
 │   ├── processed/             # Structured JSON outputs & Accuracy Reports
 │   ├── demo_dataset/          
-│   │   └── eligibility_rules.json # Day 21: Decoupled HR business logic configuration
+│   │   ├── eligibility_rules.json     # Day 21: Decoupled HR business logic configuration
 │   │   └── screening_questions.json   # Day 22: Multilingual AI-ready interview script
 │   ├── schemas/               # Pydantic/JSON validation schemas
+│   │   └── transcript_schema.json     # Day 23: Turn-by-turn conversation blueprint
+│   ├── database_schema.sql    # Day 23: PostgreSQL tables for transcript storage
 │   ├── skills_db.json         # Master taxonomy
 │   └── master_jobs_db.json    # Normalized database of 67 FinTech Roles
+├── models/
+│   └── transcript_validator.py# Day 23: Pydantic firewall for transcript data integrity
+├── screening_ai/
+│   ├── transcript_normalizer.py       # Day 23: Regex NLP cleaner for messy audio speech
+│   └── screening_data_structure.json  # Day 23: Post-AI evaluation data structure
 ├── parsers/
 │   ├── eligibility_engine.py  # Day 21: Rule-based Gatekeeper with missing-data safety net
 │   ├── parser_engine_v2.py    # Core text extraction logic
@@ -50,7 +59,7 @@ zecpath_ai_core/
 │   ├── education_parser.py    # Degree and certification extraction
 │   └── semantic_engine.py     # Vector embeddings and Cosine Similarity math
 ├── master_orchestrator.py # V2.0 Final Scoring & Output Generator
-├── tests/                 # Unit tests and automated QA reports
+├── tests/                 # Unit tests and automated QA reports (incl. test_day23.py)
 ├── utils/                 # Logging and configuration modules
 ├── METADATA_STANDARDS.md  # Documentation for data normalization
 ├── PIPELINE_DIAGRAM.md    # Visual flow of the ATS processing
