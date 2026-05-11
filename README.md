@@ -22,6 +22,7 @@ Our candidate processing is broken down into independent AI-driven microservices
 14. **Eligibility Decision Engine (Day 21):** The automated HR Gatekeeper. Applies strict business logic (location, experience constraints, mandatory skills) via decoupled JSON configurations. Features a Semantic Bridge to recognize AI-inferred skills and a 15-point mathematical grace period to safely flag borderline candidates for human review instead of auto-rejection.
 15. **HR Screening Dataset Architecture (Day 22):** Designed a centralized, AI-ready JSON "Brain" for the automated Voice Interviewer. Replaced fragmented data files with a single structured dataset featuring conversational categorization, strict LLM listening directives (evaluation criteria, expected answer types), dynamic variable injection (targeting specific skill gaps identified in Day 21), and multilingual future-proofing (English, Hindi, Malayalam)
 16. **Transcript Data Architecture (Day 23):** Designed the data pipeline to convert raw voice conversations into structured, AI-ready data. Implemented a Pydantic-powered validation firewall to protect database integrity, a Regex-based text NLP normalizer to clean messy human speech (filler words, trailing punctuation), and defined the SQL database schema for Enterprise storage.
+17. **Audio Ingestion Engine (Day 24):** Built the STT (Speech-to-Text) ingestion pipeline. Implemented dynamic ambient noise calibration and native silence-detection to process raw `.wav` files. Integrated a V4 Regex Normalizer to handle character-level stutters ("ummm"), strip conversational fillers, and dynamically format final sentence punctuation for downstream LLM readability.
 
 ## 📂 Repository Structure
 ```text
@@ -33,7 +34,9 @@ zecpath_ai_core/
 │   ├── system_architecture.md             # Day 19 Pipeline diagram & scoring logic
 │   ├── developer_guide.md                 # Day 19 Setup & troubleshooting
 │   ├── final_evaluation_report.md         # Day 20 Executive summary & portfolio piece
-│   └── Day23_Metadata_Standards.md        # Transcript data rules and audit standards
+│   ├── Day23_Metadata_Standards.md        # Transcript data rules and audit standards
+│   ├── Day24_STT_Integration.md           # Day 24 STT pipeline blueprint
+│   └── Day24_STT_Accuracy_Report.md       # Day 24 STT stress-test metrics (87% accuracy)
 ├── data/
 │   ├── processed/             # Structured JSON outputs & Accuracy Reports
 │   ├── demo_dataset/          
@@ -47,7 +50,9 @@ zecpath_ai_core/
 ├── models/
 │   └── transcript_validator.py# Day 23: Pydantic firewall for transcript data integrity
 ├── screening_ai/
-│   ├── transcript_normalizer.py       # Day 23: Regex NLP cleaner for messy audio speech
+│   ├── audio_processor.py             # Day 24: STT engine with silence & noise detection
+│   ├── transcript_cleaner.py          # Day 24: Batch processor for multiple audio answers
+│   ├── transcript_normalizer.py       # Day 23/24: Regex NLP cleaner (V4 with stutter & grammar fix)
 │   └── screening_data_structure.json  # Day 23: Post-AI evaluation data structure
 ├── parsers/
 │   ├── eligibility_engine.py  # Day 21: Rule-based Gatekeeper with missing-data safety net
