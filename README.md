@@ -23,6 +23,7 @@ Our candidate processing is broken down into independent AI-driven microservices
 15. **HR Screening Dataset Architecture (Day 22):** Designed a centralized, AI-ready JSON "Brain" for the automated Voice Interviewer. Replaced fragmented data files with a single structured dataset featuring conversational categorization, strict LLM listening directives (evaluation criteria, expected answer types), dynamic variable injection (targeting specific skill gaps identified in Day 21), and multilingual future-proofing (English, Hindi, Malayalam)
 16. **Transcript Data Architecture (Day 23):** Designed the data pipeline to convert raw voice conversations into structured, AI-ready data. Implemented a Pydantic-powered validation firewall to protect database integrity, a Regex-based text NLP normalizer to clean messy human speech (filler words, trailing punctuation), and defined the SQL database schema for Enterprise storage.
 17. **Audio Ingestion Engine (Day 24):** Built the STT (Speech-to-Text) ingestion pipeline. Implemented dynamic ambient noise calibration and native silence-detection to process raw `.wav` files. Integrated a V4 Regex Normalizer to handle character-level stutters ("ummm"), strip conversational fillers, and dynamically format final sentence punctuation for downstream LLM readability.
+18. **Answer Understanding Engine (Day 25):** Implemented an HR Intent Classifier and Entity Extraction engine (Skills, Experience, Salary, Availability) wrapped in a strict Pydantic validation firewall. Built batch-processing capabilities and automated quality checks to flag off-topic, vague, or missing answers.
 
 ## 📂 Repository Structure
 ```text
@@ -49,8 +50,11 @@ zecpath_ai_core/
 │   └── master_jobs_db.json    # Normalized database of 67 FinTech Roles
 ├── models/
 │   └── transcript_validator.py# Day 23: Pydantic firewall for transcript data integrity
+│   └── understanding_validator.py     # Day 25: Pydantic schema for extracted facts & flags
 ├── screening_ai/
 │   ├── audio_processor.py             # Day 24: STT engine with silence & noise detection
+│   ├── intent_classifier.py           # Day 25: Strict HR intent categories (Enum)
+│   ├── answer_engine.py               # Day 25: Regex fact extraction & batch processor
 │   ├── transcript_cleaner.py          # Day 24: Batch processor for multiple audio answers
 │   ├── transcript_normalizer.py       # Day 23/24: Regex NLP cleaner (V4 with stutter & grammar fix)
 │   └── screening_data_structure.json  # Day 23: Post-AI evaluation data structure
