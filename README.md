@@ -24,6 +24,7 @@ Our candidate processing is broken down into independent AI-driven microservices
 16. **Transcript Data Architecture (Day 23):** Designed the data pipeline to convert raw voice conversations into structured, AI-ready data. Implemented a Pydantic-powered validation firewall to protect database integrity, a Regex-based text NLP normalizer to clean messy human speech (filler words, trailing punctuation), and defined the SQL database schema for Enterprise storage.
 17. **Audio Ingestion Engine (Day 24):** Built the STT (Speech-to-Text) ingestion pipeline. Implemented dynamic ambient noise calibration and native silence-detection to process raw `.wav` files. Integrated a V4 Regex Normalizer to handle character-level stutters ("ummm"), strip conversational fillers, and dynamically format final sentence punctuation for downstream LLM readability.
 18. **Answer Understanding Engine (Day 25):** Implemented an HR Intent Classifier and Entity Extraction engine (Skills, Experience, Salary, Availability) wrapped in a strict Pydantic validation firewall. Built batch-processing capabilities and automated quality checks to flag off-topic, vague, or missing answers.
+19. **Screening Scoring Engine (Day 26):** Engineered an unbiased, weighted mathematical grading rubric (The AI Judge). Evaluates transcripts based on Clarity (25%), Relevance (30%), Completeness (25%), and Consistency (20%). Features Explainable AI outputs and automated 'Pass/Review/Reject' logic.
 
 ## 📂 Repository Structure
 ```text
@@ -38,6 +39,7 @@ zecpath_ai_core/
 │   ├── Day23_Metadata_Standards.md        # Transcript data rules and audit standards
 │   ├── Day24_STT_Integration.md           # Day 24 STT pipeline blueprint
 │   └── Day24_STT_Accuracy_Report.md       # Day 24 STT stress-test metrics (87% accuracy)
+│   └── Day26_Scoring_Engine.md        # Day 26: Mathematical formulas and decision rules
 ├── data/
 │   ├── processed/             # Structured JSON outputs & Accuracy Reports
 │   ├── demo_dataset/          
@@ -51,6 +53,7 @@ zecpath_ai_core/
 ├── models/
 │   └── transcript_validator.py# Day 23: Pydantic firewall for transcript data integrity
 │   └── understanding_validator.py     # Day 25: Pydantic schema for extracted facts & flags
+│   └── scoring_validator.py           # Day 26: Pydantic schema for the final Report Card
 ├── screening_ai/
 │   ├── audio_processor.py             # Day 24: STT engine with silence & noise detection
 │   ├── intent_classifier.py           # Day 25: Strict HR intent categories (Enum)
@@ -58,6 +61,7 @@ zecpath_ai_core/
 │   ├── transcript_cleaner.py          # Day 24: Batch processor for multiple audio answers
 │   ├── transcript_normalizer.py       # Day 23/24: Regex NLP cleaner (V4 with stutter & grammar fix)
 │   └── screening_data_structure.json  # Day 23: Post-AI evaluation data structure
+│   └── scoring_engine.py              # Day 26: Mathematical grading, weighting, and aggregation logic
 ├── parsers/
 │   ├── eligibility_engine.py  # Day 21: Rule-based Gatekeeper with missing-data safety net
 │   ├── parser_engine_v2.py    # Core text extraction logic
