@@ -26,6 +26,7 @@ Our candidate processing is broken down into independent AI-driven microservices
 18. **Answer Understanding Engine (Day 25):** Implemented an HR Intent Classifier and Entity Extraction engine (Skills, Experience, Salary, Availability) wrapped in a strict Pydantic validation firewall. Built batch-processing capabilities and automated quality checks to flag off-topic, vague, or missing answers.
 19. **Screening Scoring Engine (Day 26):** Engineered an unbiased, weighted mathematical grading rubric (The AI Judge). Evaluates transcripts based on Clarity (25%), Relevance (30%), Completeness (25%), and Consistency (20%). Features Explainable AI outputs and automated 'Pass/Review/Reject' logic.
 20. **Behavioral EQ & Sentiment Engine (Day 27):** Built a behavioral analysis pipeline. Uses lexical dictionaries and pacing logic (Words per Second) to calculate Confidence and Sentiment out of 1.0. Outputs a final 'Strong/Moderate/Weak' Communication Strength indicator alongside psychological behavior flags.
+21. **AI Screening Report Generator (Day 28):** Engineered the "Executive Summary" aggregation layer. Transforms raw technical scores and behavioral JSON into a recruiter-friendly format. Highlights critical dealbreakers (salary, availability) and generates automated text summaries for strengths, risks, and missing data. Includes a text-export module for offline reading.
 
 ## 📂 Repository Structure
 ```text
@@ -66,6 +67,8 @@ zecpath_ai_core/
 │   └── screening_data_structure.json  # Day 23: Post-AI evaluation data structure
 │   └── scoring_engine.py              # Day 26: Mathematical grading, weighting, and aggregation logic
 │   └── behavioral_engine.py           # Day 27: NLP filler word detection and sentiment analysis
+│   ├── report_generator.py            # Day 28: Aggregates tech, behavior, and raw answers into a UI-ready format
+│   └── report_exporter.py             # Day 28: Converts JSON reports to printable Text format
 ├── parsers/
 │   ├── eligibility_engine.py  # Day 21: Rule-based Gatekeeper with missing-data safety net
 │   ├── parser_engine_v2.py    # Core text extraction logic
