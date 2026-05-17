@@ -27,6 +27,7 @@ Our candidate processing is broken down into independent AI-driven microservices
 19. **Screening Scoring Engine (Day 26):** Engineered an unbiased, weighted mathematical grading rubric (The AI Judge). Evaluates transcripts based on Clarity (25%), Relevance (30%), Completeness (25%), and Consistency (20%). Features Explainable AI outputs and automated 'Pass/Review/Reject' logic.
 20. **Behavioral EQ & Sentiment Engine (Day 27):** Built a behavioral analysis pipeline. Uses lexical dictionaries and pacing logic (Words per Second) to calculate Confidence and Sentiment out of 1.0. Outputs a final 'Strong/Moderate/Weak' Communication Strength indicator alongside psychological behavior flags.
 21. **AI Screening Report Generator (Day 28):** Engineered the "Executive Summary" aggregation layer. Transforms raw technical scores and behavioral JSON into a recruiter-friendly format. Highlights critical dealbreakers (salary, availability) and generates automated text summaries for strengths, risks, and missing data. Includes a text-export module for offline reading.
+22. **AI Conversation Flow Design (Day 29):** Implemented a highly scalable, graph-based state machine for live conversational routing. Engineered NLP heuristics to detect silence, confusion, and stalling, dynamically routing candidates through fallback and retry nodes via a decoupled JSON architecture.
 
 ## 📂 Repository Structure
 ```text
@@ -43,6 +44,7 @@ zecpath_ai_core/
 │   └── Day24_STT_Accuracy_Report.md       # Day 24 STT stress-test metrics (87% accuracy)
 │   └── Day26_Scoring_Engine.md        # Day 26: Mathematical formulas and decision rules
 │   └── Day27_Behavioral_Analysis.md   # Day 27: EQ, NLP lexicons, and soft-skill metrics
+│   └── Day29_Conversation_Flow.md     # Day 29: State machine and routing documentation
 ├── data/
 │   ├── processed/             # Structured JSON outputs & Accuracy Reports
 │   ├── demo_dataset/          
@@ -69,6 +71,9 @@ zecpath_ai_core/
 │   └── behavioral_engine.py           # Day 27: NLP filler word detection and sentiment analysis
 │   ├── report_generator.py            # Day 28: Aggregates tech, behavior, and raw answers into a UI-ready format
 │   └── report_exporter.py             # Day 28: Converts JSON reports to printable Text format
+│   ├── conversation_flow.json         # Day 29: Decision tree map for interview routing
+│   ├── error_handling.py              # Day 29: NLP rules to detect silence/confusion
+│   └── conversation_engine.py         # Day 29: Core state machine engine
 ├── parsers/
 │   ├── eligibility_engine.py  # Day 21: Rule-based Gatekeeper with missing-data safety net
 │   ├── parser_engine_v2.py    # Core text extraction logic
