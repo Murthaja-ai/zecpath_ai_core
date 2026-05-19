@@ -36,7 +36,7 @@ def generate_screening_report(candidate_id, job_id, answers, scores, behavior_re
 
     # Calculate final decision
     final_score = sum(s.get("final_score", 0) for s in scores) / len(scores) if scores else 0
-    decision = "Proceed" if final_score >= 70 else "Review" if final_score >= 50 else "Reject"
+    decision = "Proceed" if final_score >= 65 else "Review" if final_score >= 45 else "Reject"
 
     return {
         "candidate_id": candidate_id,

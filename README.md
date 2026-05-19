@@ -28,6 +28,7 @@ Our candidate processing is broken down into independent AI-driven microservices
 20. **Behavioral EQ & Sentiment Engine (Day 27):** Built a behavioral analysis pipeline. Uses lexical dictionaries and pacing logic (Words per Second) to calculate Confidence and Sentiment out of 1.0. Outputs a final 'Strong/Moderate/Weak' Communication Strength indicator alongside psychological behavior flags.
 21. **AI Screening Report Generator (Day 28):** Engineered the "Executive Summary" aggregation layer. Transforms raw technical scores and behavioral JSON into a recruiter-friendly format. Highlights critical dealbreakers (salary, availability) and generates automated text summaries for strengths, risks, and missing data. Includes a text-export module for offline reading.
 22. **AI Conversation Flow Design (Day 29):** Implemented a highly scalable, graph-based state machine for live conversational routing. Engineered NLP heuristics to detect silence, confusion, and stalling, dynamically routing candidates through fallback and retry nodes via a decoupled JSON architecture.
+23. **Screening System Optimization (Day 30):** Conducted End-to-End QA testing to align AI decisions with human HR standards. Reduced false-rejection rates by implementing adaptive retry state-machines, lightweight intent-mapping heuristics, and calibrated scoring thresholds (Pass >= 65).
 
 ## 📂 Repository Structure
 ```text
@@ -45,6 +46,7 @@ zecpath_ai_core/
 │   └── Day26_Scoring_Engine.md        # Day 26: Mathematical formulas and decision rules
 │   └── Day27_Behavioral_Analysis.md   # Day 27: EQ, NLP lexicons, and soft-skill metrics
 │   └── Day29_Conversation_Flow.md     # Day 29: State machine and routing documentation
+│   └── Day30_Testing_Optimization.md  # Day 30: Final QA report and metrics (Accuracy: 86%)
 ├── data/
 │   ├── processed/             # Structured JSON outputs & Accuracy Reports
 │   ├── demo_dataset/          
@@ -74,6 +76,8 @@ zecpath_ai_core/
 │   ├── conversation_flow.json         # Day 29: Decision tree map for interview routing
 │   ├── error_handling.py              # Day 29: NLP rules to detect silence/confusion
 │   └── conversation_engine.py         # Day 29: Core state machine engine
+│   ├── improved_intent.py             # Day 30: Fast heuristic keyword matcher for intents
+│   └── optimized_flow_updates.py      # Day 30: Empathy engine (adaptive retry & simplify logic)
 ├── parsers/
 │   ├── eligibility_engine.py  # Day 21: Rule-based Gatekeeper with missing-data safety net
 │   ├── parser_engine_v2.py    # Core text extraction logic
@@ -85,6 +89,8 @@ zecpath_ai_core/
 │   └── semantic_engine.py     # Vector embeddings and Cosine Similarity math
 ├── master_orchestrator.py # V2.0 Final Scoring & Output Generator
 ├── tests/                 # Unit tests and automated QA reports (incl. test_day23.py)
+│   ├── simulate_screening.py          # Day 30: Master End-to-End integration test
+│   └── test_improved_intent.py        # Day 30: Unit test for the keyword matcher
 ├── utils/                 # Logging and configuration modules
 ├── METADATA_STANDARDS.md  # Documentation for data normalization
 ├── PIPELINE_DIAGRAM.md    # Visual flow of the ATS processing
