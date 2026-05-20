@@ -29,6 +29,7 @@ Our candidate processing is broken down into independent AI-driven microservices
 21. **AI Screening Report Generator (Day 28):** Engineered the "Executive Summary" aggregation layer. Transforms raw technical scores and behavioral JSON into a recruiter-friendly format. Highlights critical dealbreakers (salary, availability) and generates automated text summaries for strengths, risks, and missing data. Includes a text-export module for offline reading.
 22. **AI Conversation Flow Design (Day 29):** Implemented a highly scalable, graph-based state machine for live conversational routing. Engineered NLP heuristics to detect silence, confusion, and stalling, dynamically routing candidates through fallback and retry nodes via a decoupled JSON architecture.
 23. **Screening System Optimization (Day 30):** Conducted End-to-End QA testing to align AI decisions with human HR standards. Reduced false-rejection rates by implementing adaptive retry state-machines, lightweight intent-mapping heuristics, and calibrated scoring thresholds (Pass >= 65).
+24. **Edge Case & Chaos Engineering (Day 31):** Engineered environmental resilience layers for live deployment. Built regex-based noise sanitizers, hardware-confidence fallback routers, code-switching (language mixing) detectors, and hard infinite-loop safety stops.
 
 ## 📂 Repository Structure
 ```text
@@ -78,6 +79,9 @@ zecpath_ai_core/
 │   └── conversation_engine.py         # Day 29: Core state machine engine
 │   ├── improved_intent.py             # Day 30: Fast heuristic keyword matcher for intents
 │   └── optimized_flow_updates.py      # Day 30: Empathy engine (adaptive retry & simplify logic)
+├── noise_handler.py               # Day 31: Regex sweeper for STT hardware noise
+│   ├── robust_flow.py                 # Day 31: Edge case detector and adaptive router
+│   └── error_framework.py             # Day 31: Polite fallback dialogue responses
 ├── parsers/
 │   ├── eligibility_engine.py  # Day 21: Rule-based Gatekeeper with missing-data safety net
 │   ├── parser_engine_v2.py    # Core text extraction logic
