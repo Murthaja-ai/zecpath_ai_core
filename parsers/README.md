@@ -17,6 +17,7 @@ The ATS Engine handles the top of the Zecpath hiring funnel. It automatically pa
 * **Eligibility Decision Engine (Day 21):** Enforces strict business logic (location, mandatory skills).
 
 ## 📂 ATS File Structure
+```text
 zecpath_ai_core/
 ├── parsers/                   
 │   ├── eligibility_engine.py
@@ -42,7 +43,8 @@ zecpath_ai_core/
 │   ├── raw_resumes/
 │   └── processed/
 ├── master_orchestrator.py     
-├── run_day8.py -> run_day15.py
+└── run_day8.py -> run_day15.py
+```
 
 ## 💻 Execution Modules
 Run these scripts from the root directory to test the ATS pipeline:

@@ -15,7 +15,9 @@ The Voice Screening AI is the autonomous interviewer for the Zecpath platform. I
 * **Chaos Engineering (Day 31):** Environmental resilience layers, Regex-based noise sanitizers, and hardware-confidence fallback routers.
 * **API Finalization (Day 32):** Built a RESTful Flask API and mock E2E demo for enterprise frontend integration.
 
+
 ## 📂 Screening AI File Structure
+```text
 zecpath_ai_core/
 ├── screening_ai/              
 │   ├── audio_processor.py
@@ -45,11 +47,12 @@ zecpath_ai_core/
 │   └── routes.py              
 ├── demo/
 │   └── run_demo.py            
-├── tests/                     
-│   ├── simulate_screening.py
-│   ├── test_edge_cases.py
-│   ├── test_behavior.py
-│   └── test_report_generator.py
+└── tests/                     
+    ├── simulate_screening.py
+    ├── test_edge_cases.py
+    ├── test_behavior.py
+    └── test_report_generator.py
+```
 
 ## 🌐 API Contract & Execution
 Run these scripts from the root directory:
