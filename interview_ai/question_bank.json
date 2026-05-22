@@ -1,0 +1,48 @@
+{
+  "categories": {
+    "introduction": {
+      "fresher": [
+        "Can you introduce yourself and tell me about a college project you are proud of?",
+        "Tell me about your academic background and why you chose this field."
+      ],
+      "experienced": [
+        "Walk me through your career journey over the last few years.",
+        "Tell me about your professional background and your most recent role."
+      ]
+    },
+    "strengths_weaknesses": {
+      "common": [
+        "What would you consider to be your greatest professional strengths?",
+        "What is your biggest weakness, and how are you working to improve it?"
+      ]
+    },
+    "teamwork": {
+      "common": [
+        "Tell me about a time you worked in a team and faced a disagreement. How did you handle it?",
+        "How do you usually handle conflicts or differences of opinion in a professional setting?"
+      ]
+    },
+    "career_goals": {
+      "common": [
+        "Where do you see yourself professionally in the next 3 to 5 years?",
+        "What are your long-term career goals and how does this role fit into them?"
+      ]
+    },
+    "availability": {
+      "common": [
+        "What is your current notice period?",
+        "If selected, how soon would you be able to join us?"
+      ]
+    }
+  },
+  "role_based": {
+    "technical": [
+      "Explain a challenging technical problem you solved recently.",
+      "How do you keep your technical skills updated in such a fast-paced industry?"
+    ],
+    "non_technical": [
+      "How do you handle difficult client communications or strict deadlines?",
+      "Describe a situation where you solved a complex business problem."
+    ]
+  }
+}

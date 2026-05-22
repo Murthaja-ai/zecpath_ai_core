@@ -1,0 +1,15 @@
+{
+    "candidate_id": "C101",
+    "job_id": "J501",
+    "current_phase": "core_questions",
+    "questions": [
+        {
+            "question_id": "Q1",
+            "question": "Tell me about yourself",
+            "response": "",
+            "status": "pending",
+            "follow_up_allowed": true
+        }
+    ],
+    "completed": false
+}
