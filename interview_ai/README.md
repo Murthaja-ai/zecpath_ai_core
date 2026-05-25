@@ -3,31 +3,37 @@
 ## 📌 Overview
 The Advanced HR Interview Engine is Phase 3 of the Zecpath hiring funnel. Unlike the quick 5-minute screening caller, this engine conducts a deep, 30-minute psychological evaluation. It abandons static scripts in favor of a Dynamic Playlist Architecture—generating personalized interview questions based on the candidate's experience level, role, and real-time answer quality.
 
-## 🏗️ Core Architecture (Day 33 - 34)
-* **HR Interview Engine Design (Day 33):** Designed the foundational architecture for the 4-phase interview state machine (Intro, Core, Role-Based, Closing).
-* **Question Bank Architecture (Day 33):** Decoupled interview questions from Python logic into a scalable JSON database categorized by persona and domain.
-* **Follow-Up Detection Engine (Day 34):** Analyzes incoming answers mathematically to classify quality (Empty, Too Short, Uncertain, Basic, Good) and triggers targeted empathy prompts (Clarification, Elaboration, Example-based).
-* **Difficulty Adaptation Framework (Day 34):** Dynamically adjusts the psychological framing of the *next* question based on current performance (e.g., simplifying questions for struggling candidates, or throwing complex scenarios at confident ones).
-* **OOP State Tracking (Day 34):** Uses an `InterviewState` class to maintain a live history of the conversation, using mathematical sets to completely prevent repetitive questioning.
+## 🏗️ Core Architecture (Day 33 - 35)
+* **HR Interview Engine Design (Day 33):** 4-phase interview state machine (Intro, Core, Role-Based, Closing).
+* **Question Bank Architecture (Day 33):** Decoupled JSON database categorized by persona and domain.
+* **Follow-Up Detection Engine (Day 34):** Analyzes incoming answers to classify quality and triggers targeted empathy prompts.
+* **Difficulty Adaptation Framework (Day 34):** Dynamically adjusts the psychological framing of the *next* question based on current performance.
+* **OOP State Tracking (Day 34):** Uses an `InterviewState` class to prevent repetitive questioning.
+* **Communication Evaluation Engine (Day 35):** An objective, heuristic NLP rubric that grades a candidate's Fluency, Grammar, Vocabulary, Clarity, and Structure on a normalized 0-100 scale while mathematically penalizing filler words.
 
 ## 📂 Interview AI File Structure
 
     zecpath_ai_core/
     ├── interview_ai/              
-    │   ├── question_bank.json     # Decoupled database of behavioral/tech questions
-    │   ├── question_generator.py  # Playlist compiler (Persona/Role routing)
-    │   ├── followup_engine.py     # Answer quality detection & immediate follow-ups
-    │   ├── adaptive_engine.py     # Difficulty adaptation for upcoming questions
-    │   ├── state_tracker.py       # OOP memory tracker & Master pipeline integration
-    │   └── README.md              # Phase 3 Documentation
+    │   ├── question_bank.json     
+    │   ├── question_generator.py  
+    │   ├── followup_engine.py     
+    │   ├── adaptive_engine.py     
+    │   ├── state_tracker.py       
+    │   ├── communication_engine.py # Day 35: Objective grading heuristics
+    │   ├── normalization.py        # Day 35: Mathematical bias-reduction
+    │   └── README.md              
     ├── docs/
-    │   ├── Day33_HR_Interview_Design.md  # ASCII Architecture Diagram & Flow Design
-    │   └── Day34_Adaptive_Logic.md       # Adaptive Decision Tree & Logic Rules
+    │   ├── Day33_HR_Interview_Design.md  
+    │   ├── Day34_Adaptive_Logic.md       
+    │   ├── Day35_Communication_Rubric.md # Day 35: Scoring formula & rules
+    │   └── Day35_Sample_Scores.json      # Day 35: Benchmark examples
     └── tests/
-        └── test_day34_followup.py        # Automated unit tests for logic validation
+        ├── test_day34_followup.py        
+        └── test_day35_communication.py   # Day 35: Evaluator unit tests
 
 ## 💻 Execution Modules
-Run these scripts from the root directory to test the dynamic generation engines:
+Run these scripts from the root directory to test the engines:
 
 **1. Test the Dynamic Question Playlist:**
 
@@ -37,6 +43,7 @@ Run these scripts from the root directory to test the dynamic generation engines
 
     python interview_ai/state_tracker.py
 
-**3. Run Automated Unit Tests:**
+**3. Run Automated Unit Tests (Follow-up & Communication):**
 
     python tests/test_day34_followup.py
+    python tests/test_day35_communication.py
