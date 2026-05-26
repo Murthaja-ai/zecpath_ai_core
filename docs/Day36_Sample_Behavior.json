@@ -1,0 +1,35 @@
+{
+    "Example_1_Confident_Leader": {
+        "behavioral_score": 93.0,
+        "sentiment_label": "Positive",
+        "breakdown": {
+            "confidence_delivery": 100.0,
+            "hesitation_metric": 1.0,
+            "uncertainty_metric": 1.0,
+            "pacing_metric": 1.0,
+            "contradiction_detected": false
+        }
+    },
+    "Example_2_Nervous_Candidate": {
+        "behavioral_score": 62.5,
+        "sentiment_label": "Neutral",
+        "breakdown": {
+            "confidence_delivery": 67.8,
+            "hesitation_metric": 0.6,
+            "uncertainty_metric": 0.7,
+            "pacing_metric": 0.7,
+            "contradiction_detected": false
+        }
+    },
+    "Example_3_Panicking_Candidate": {
+        "behavioral_score": 28.5,
+        "sentiment_label": "Negative",
+        "breakdown": {
+            "confidence_delivery": 40.5,
+            "hesitation_metric": 0.4,
+            "uncertainty_metric": 0.4,
+            "pacing_metric": 0.4,
+            "contradiction_detected": true
+        }
+    }
+}
