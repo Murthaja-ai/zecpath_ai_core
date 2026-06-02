@@ -1,23 +1,26 @@
-# Phase 3: Advanced HR Interview AI
+# Zecpath Advanced Interview AI
 
-## 📌 Overview
-The Advanced HR Interview Engine is Phase 3 of the Zecpath hiring funnel. It conducts a deep, 30-minute psychological and technical evaluation. It abandons static scripts in favor of a Dynamic Playlist Architecture, actively listens to candidates, grades their soft skills, and compiles a comprehensive hiring report.
+## 📌 Phase 3: Advanced HR Interview AI
+Phase 3 conducts a deep, 30-minute psychological evaluation. It abandons static scripts in favor of a Dynamic Playlist Architecture, actively listens to candidates, grades their soft skills, and compiles a comprehensive hiring report.
 
-## 🏗️ Core Architecture (Days 33 - 37)
-* **HR Interview Engine Design (Day 33):** 4-phase interview state machine (Intro, Core, Role-Based, Closing).
-* **Question Bank Architecture (Day 33):** Decoupled JSON database categorized by persona and domain.
-* **Follow-Up Detection Engine (Day 34):** Analyzes incoming answers to classify quality and triggers targeted empathy prompts.
-* **Difficulty Adaptation Framework (Day 34):** Dynamically adjusts the psychological framing of the *next* question based on current performance.
-* **OOP State Tracking (Day 34):** Uses an `InterviewState` class to prevent repetitive questioning.
-* **Communication Evaluation Engine (Day 35):** Objective NLP rubric that grades Fluency, Grammar, Vocabulary, Clarity, and Structure.
-* **Psychological & Behavioral Profiler (Day 36):** A mathematical engine scoring delivery confidence, emotional sentiment, and stress indicators.
-* **HR Scoring & Report Engine (Day 37):** The master aggregator. It applies role-based weight configurations (Fresher vs. Experienced) to combine all metrics into a final 0-100 score, generating an explainable JSON report card and a final hiring decision (STRONG HIRE, CONSIDER, or REJECT).
+* **Dynamic Questioning & Empathy (Days 33-34):** Routes questions by persona and dynamically pushes back on weak answers using an `InterviewState` tracker.
+* **Communication Evaluator (Day 35):** Objective NLP rubric grading Fluency, Grammar, and Vocabulary.
+* **Psychological Profiler (Day 36):** Mathematical engine scoring delivery confidence, pacing, and stress indicators.
+* **HR Scoring Engine (Day 37):** Master aggregator using role-based weights to generate a final 0-100 score and hiring decision.
+
+---
+
+## 🧠 Phase 4: Cognitive & Aptitude Evaluation
+Phase 4 evolves the AI from testing *how* candidates speak to testing *how they think*. It introduces Situational Judgment Tests (SJTs) to evaluate critical thinking under pressure.
+
+* **Aptitude & Logic Engine (Day 38):** A heuristic grading model that evaluates a candidate's structured thinking (cause-and-effect sequencing), risk awareness (evaluating trade-offs/fallbacks), and alignment with ideal scenario resolutions.
 
 ## 📂 Interview AI File Structure
 
     zecpath_ai_core/
     ├── interview_ai/              
     │   ├── question_bank.json     
+    │   ├── aptitude_questions.json # Day 38: Situational judgment scenarios
     │   ├── question_generator.py  
     │   ├── followup_engine.py     
     │   ├── adaptive_engine.py     
@@ -25,7 +28,8 @@ The Advanced HR Interview Engine is Phase 3 of the Zecpath hiring funnel. It con
     │   ├── communication_engine.py 
     │   ├── normalization.py        
     │   ├── behavioral_engine.py    
-    │   ├── hr_scoring_engine.py    # Day 37: Master HR report aggregator
+    │   ├── hr_scoring_engine.py    
+    │   ├── aptitude_engine.py      # Day 38: Cognitive and logic grader
     │   └── README.md              
     ├── docs/
     │   ├── Day33_HR_Interview_Design.md  
@@ -34,20 +38,21 @@ The Advanced HR Interview Engine is Phase 3 of the Zecpath hiring funnel. It con
     │   ├── Day35_Sample_Scores.json      
     │   ├── Day36_Behavioral_Rubric.md    
     │   ├── Day36_Sample_Behavior.json    
-    │   ├── Day37_Scoring_Rubric.md       # Day 37: Weight configs & decision rules
-    │   └── Day37_HR_Report.json          # Day 37: Final API mock data
+    │   ├── Day37_Scoring_Rubric.md       
+    │   ├── Day37_HR_Report.json          
+    │   └── Day38_Aptitude_Rubric.md      # Day 38: Cognitive scoring documentation
     └── tests/
         ├── test_day34_followup.py        
         ├── test_day35_communication.py   
         ├── test_day36_behavior.py        
-        └── test_day37_hr_scoring.py      # Day 37: Aggregation and math validation
+        ├── test_day37_hr_scoring.py      
+        └── test_day38_aptitude.py        # Day 38: Logic validation tests
 
 ## 💻 Execution Modules
 Run these scripts from the root directory to test the engines:
 
-**1. Test the Master Final Report:**
+**1. Test the Master HR Report:**
 `python tests/test_day37_hr_scoring.py`
 
-**2. Test the Individual Sub-Engines:**
-`python tests/test_day36_behavior.py`
-`python tests/test_day35_communication.py`
+**2. Test the Aptitude & Logic Engine:**
+`python tests/test_day38_aptitude.py`

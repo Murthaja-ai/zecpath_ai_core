@@ -1,0 +1,13 @@
+{
+    "deadline_pressure": [
+        "A critical project is due in 24 hours, but your lead developer just quit. Walk me through your exact next steps.",
+        "You realize halfway through a sprint that the current architecture will fail under production load. How do you handle this?"
+    ],
+    "team_conflict": [
+        "You strongly disagree with the architectural decision made by your manager. How do you approach this?",
+        "A senior team member is consistently refusing to review your pull requests. What is your action plan?"
+    ],
+    "learning": [
+        "The client mandates that a new feature be written in a programming language you have never used. How do you adapt?"
+    ]
+}
