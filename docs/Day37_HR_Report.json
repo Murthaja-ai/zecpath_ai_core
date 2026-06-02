@@ -1,0 +1,24 @@
+{
+    "candidate_id": "CAND-9092",
+    "candidate_type": "experienced",
+    "final_hr_score": 83.5,
+    "decision": "STRONG HIRE",
+    "breakdown": [
+        {
+            "question_id": "Q1_Leadership",
+            "question_score": 83.5,
+            "metrics": {
+                "relevance": 90.0,
+                "communication": 75.0,
+                "confidence": 80.0,
+                "consistency": 100.0
+            },
+            "explanations": {
+                "relevance": "Highly relevant and on-topic.",
+                "communication": "Used filler words or poor structure.",
+                "confidence": "Strong delivery with minimal hesitation.",
+                "consistency": "Logical and consistent."
+            }
+        }
+    ]
+}
