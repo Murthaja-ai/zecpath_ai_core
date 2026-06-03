@@ -1,0 +1,16 @@
+{
+    "candidate_id": "CAND-001",
+    "composite_score": 82.5,
+    "decision": "STRONG HIRE",
+    "structured_insights": {
+        "strengths": [
+            "High technical relevance and role alignment",
+            "Advanced structured thinking and problem-solving logic"
+        ],
+        "weaknesses": [
+            "No critical weaknesses identified"
+        ],
+        "risk_flags": []
+    },
+    "executive_narrative": "Executive Summary:\nThe candidate demonstrated strong capabilities, particularly in high technical relevance and role alignment and advanced structured thinking and problem-solving logic.\nFinal System Recommendation: STRONG HIRE"
+}
