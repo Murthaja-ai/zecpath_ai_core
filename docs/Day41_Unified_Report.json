@@ -1,0 +1,18 @@
+{
+    "candidate_id": "CAND-999",
+    "role_type": "experienced",
+    "unified_hiring_score": 88.5,
+    "fit_category": "Excellent Fit",
+    "final_decision": "STRONG HIRE",
+    "veto_flag": null,
+    "breakdown": {
+        "ats_resume": 85.0,
+        "initial_screening": 90.0,
+        "deep_ai_interview": 90.0
+    },
+    "weights_applied": {
+        "ats": 0.30,
+        "screening": 0.20,
+        "deep_interview": 0.50
+    }
+}
