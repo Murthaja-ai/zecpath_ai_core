@@ -19,10 +19,11 @@ Tests how candidates think under pressure and provides the enterprise End-to-End
 
 ---
 
-## 🚀 Phase 5: The Grand Unifier & Executive Dashboards
-Phase 5 connects all previous Zecpath modules (ATS, Screening, Deep Interview) into a single, commercial-ready product. 
+## 🚀 Phase 5: The Grand Unifier & System Optimization
+Phase 5 connects all previous Zecpath modules (ATS, Screening, Deep Interview) into a single, commercial-ready product optimized for precision and enterprise scaling.
 
 * **Unified Scoring Engine (Day 41):** The master algorithm that ingests scores from Phase 1, 2, and 4. It applies role-based dynamic weights and enforces strict "Dealbreaker Vetoes" to output a single 0-100% Hiring Fit score.
+* **Optimization & Stability Suite (Day 42):** Eliminates mathematical and text processing volatility. Uses absolute boundary scaling to remove score spikes, extracts metrics from conversational filler text, and locks conversational loop caps.
 
 ## 📂 Interview AI File Structure
 
@@ -41,25 +42,31 @@ Phase 5 connects all previous Zecpath modules (ATS, Screening, Deep Interview) i
     │   ├── aptitude_engine.py      
     │   ├── summary_generator.py    
     │   ├── unified_scoring_engine.py       # Day 41: Cross-round grand unifier with veto logic
+    │   ├── stability_optimizer.py          # Day 42: Outlier smoothing & transcript metrics cleanup
     │   └── README.md              
     ├── docs/
     │   ├── Day39_Reporting_Architecture.md 
     │   ├── Day39_Summary_Template.json     
     │   ├── Day40_Simulation_Report.md      
     │   ├── Day41_Unified_Architecture.md   # Day 41: Veto & weighting logic documentation
-    │   └── Day41_Unified_Report.json       # Day 41: Final master API payload template
+    │   ├── Day41_Unified_Report.json       # Day 41: Final master API payload template
+    │   └── Day42_Optimization_Report.md    # Day 42: Stability matrices & performance delta
     └── tests/
         ├── test_day37_hr_scoring.py      
         ├── test_day38_aptitude.py        
         ├── test_day39_summary.py         
         ├── hr_simulation.py              
-        └── test_day41_unified.py           # Day 41: Veto trigger validation
+        ├── test_day41_unified.py           # Day 41: Veto trigger validation
+        └── test_day42_stability.py         # Day 42: Anomaly filtering & state loop validation
 
 ## 💻 Execution Modules
 Run these scripts from the root directory to test the engines:
 
-**1. Test the Unified Scoring Engine (Veto & Math):**
+**1. Test System Stability & Anomaly Filtering:**
+`python tests/test_day42_stability.py`
+
+**2. Test the Unified Scoring Engine (Veto & Math):**
 `python tests/test_day41_unified.py`
 
-**2. Run the Full 40-Candidate E2E QA Simulation:**
+**3. Run the Full 40-Candidate E2E QA Simulation:**
 `python tests/hr_simulation.py`
