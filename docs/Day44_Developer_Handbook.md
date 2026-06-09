@@ -7,6 +7,7 @@
 
 To connect a new front-end layout or system client to the Zecpath AI Core pipeline, implement this standard communication loop:
 
+```text
 [Client Startup] ──▶ Send POST /start to register Session
                         │
                         ▼
@@ -23,6 +24,7 @@ To connect a new front-end layout or system client to the Zecpath AI Core pipeli
                         │
                         ▼
 [Interview End]  ──▶ Send GET /report to surface calculated KPIs
+```
 
 ---
 
