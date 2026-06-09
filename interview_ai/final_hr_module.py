@@ -61,7 +61,7 @@ def execute_production_interview_pipeline(candidate_data: dict) -> dict:
     return final_report
 
 if __name__ == "__main__":
-    with open("../demo/hr_demo_dataset.json", "r") as file:
+    with open("demo/hr_demo_dataset.json", "r") as file:
         dataset = json.load(file)
         print("\n=== ZECPATH AI CORE: LIVE PRODUCTION DEMO ===")
         for candidate in dataset:
