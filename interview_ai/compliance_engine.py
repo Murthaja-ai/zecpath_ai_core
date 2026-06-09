@@ -1,6 +1,5 @@
-# interview_ai/compliance_engine.py
 import re
-from datetime import datetime, timedelta
+from datetime import datetime, timedelta, timezone
 
 # -------------------------------------------------------------------
 # 1. AUTOMATED PII ANONYMIZATION ENGINE
@@ -51,7 +50,7 @@ def generate_explainable_output(final_score: float, breakdowns: dict, vetoes_tri
         "decision": decision,
         "justification": explanation,
         "breakdowns": breakdowns,
-        "timestamp": datetime.utcnow().isoformat()
+        "timestamp": datetime.now(timezone.utc).isoformat()
     }
 
 # -------------------------------------------------------------------
@@ -59,7 +58,7 @@ def generate_explainable_output(final_score: float, breakdowns: dict, vetoes_tri
 # -------------------------------------------------------------------
 def enforce_data_retention(candidate_record: dict, current_date_str: str = None) -> dict:
     """Enforces absolute Right to Erasure by purging identifying data elements after 90 days."""
-    current_date = datetime.strptime(current_date_str, "%Y-%m-%d") if current_date_str else datetime.utcnow()
+    current_date = datetime.strptime(current_date_str, "%Y-%m-%d") if current_date_str else datetime.now(timezone.utc).replace(tzinfo=None)
     creation_date = datetime.strptime(candidate_record["created_at"], "%Y-%m-%d")
     
     days_elapsed = (current_date - creation_date).days

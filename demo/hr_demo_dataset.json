@@ -1,0 +1,32 @@
+[
+  {
+    "candidate_id": "C-1001-DEV",
+    "role": "Backend Engineer",
+    "raw_transcript": "Um, basically John and I deployed the Python routing cluster. He was fast, and the logic was solid.",
+    "historical_metrics": {
+      "ats_score": 88.0,
+      "screening_score": 82.5
+    },
+    "interview_metrics": {
+      "communication_sub_scores": [85.0, 88.0, 10.0, 89.0], 
+      "confidence_system_metric": 75.0,
+      "aptitude_score": 90.0
+    },
+    "active_vetoes": []
+  },
+  {
+    "candidate_id": "C-1002-SEC",
+    "role": "Security Analyst",
+    "raw_transcript": "I bypassed the auth layer manually using a root script.",
+    "historical_metrics": {
+      "ats_score": 95.0,
+      "screening_score": 91.0
+    },
+    "interview_metrics": {
+      "communication_sub_scores": [90.0, 92.0, 91.0], 
+      "confidence_system_metric": 95.0,
+      "aptitude_score": 98.0
+    },
+    "active_vetoes": ["CRITICAL_SECURITY_VIOLATION"]
+  }
+]
