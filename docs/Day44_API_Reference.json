@@ -1,0 +1,148 @@
+{
+  "openapi": "3.0.3",
+  "info": {
+    "title": "Zecpath Core AI Recruitment API",
+    "version": "1.0.44",
+    "description": "Production-grade REST endpoints for controlling session lifecycles, evaluating real-time transcripts, and enforcing GDPR data protection constraints."
+  },
+  "servers": [
+    {
+      "url": "https://api.zecpath.ai/v1/hr-interview"
+    }
+  ],
+  "paths": {
+    "/start": {
+      "post": {
+        "summary": "Initialize Interview Session",
+        "description": "Establishes session tokens, registers candidate data, maps system configuration targets, and seeds the question playlist framework.",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "required": ["candidate_id", "job_id", "role_type", "experience_level"],
+                "properties": {
+                  "candidate_id": { "type": "string", "example": "C101" },
+                  "job_id": { "type": "string", "example": "J501" },
+                  "role_type": { "type": "string", "example": "software_engineer" },
+                  "experience_level": { "type": "string", "example": "mid_level" },
+                  "mask_pii": { "type": "boolean", "default": true },
+                  "retention_days": { "type": "integer", "default": 90 }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Session initialized successfully.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "session_id": { "type": "string", "example": "S-9923A-X" },
+                    "status": { "type": "string", "example": "INITIALIZED" },
+                    "initial_questions": {
+                      "type": "array",
+                      "items": { "type": "string" },
+                      "example": ["Describe your experience with modern UI architectures.", "How do you manage cross-origin request anomalies?"]
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/answer": {
+      "post": {
+        "summary": "Process Inbound Transcript",
+        "description": "Intercepts raw user transcripts, passes them through structural text optimization and identity scrubbing filters, runs semantic graders, and updates state structures.",
+        "requestBody": {
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "required": ["session_id", "question_id", "raw_transcript", "response_duration_sec"],
+                "properties": {
+                  "session_id": { "type": "string", "example": "S-9923A-X" },
+                  "question_id": { "type": "string", "example": "Q-04-TECH" },
+                  "raw_transcript": { "type": "string", "example": "Um, I think Murthaja worked on the production routing. He completed it very fast, like, you know, in two days." },
+                  "response_duration_sec": { "type": "integer", "example": 24 }
+                }
+              }
+            }
+          }
+        },
+        "responses": {
+          "200": {
+            "description": "Transcript successfully integrated and evaluated.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "processed_transcript": { "type": "string", "example": "they completed the production routing quickly." },
+                    "adaptive_follow_up": { "type": "string", "example": "Could you provide details on how the state architecture was scaled during that pipeline update?" },
+                    "next_core_question": { "type": "string", "example": "Explain your approach to implementing secure authentication structures." }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    },
+    "/report/{session_id}": {
+      "get": {
+        "summary": "Retrieve Comprehensive Analytical Review",
+        "description": "Compiles cross-round evaluation criteria, scans for active system vetoes, appends clear plain-English legal explanations, and checks regulatory data lifecycle boundaries.",
+        "parameters": [
+          {
+            "name": "session_id",
+            "in": "path",
+            "required": true,
+            "schema": { "type": "string" },
+            "example": "S-9923A-X"
+          }
+        ],
+        "responses": {
+          "200": {
+            "description": "Analytical report payload retrieved.",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "candidate_id": { "type": "string", "example": "C101" },
+                    "lifecycle_state": { "type": "string", "example": "ACTIVE_RETAINED" },
+                    "round_breakdowns": {
+                      "type": "object",
+                      "properties": {
+                        "ats_score": { "type": "number", "example": 82.0 },
+                        "screening_score": { "type": "number", "example": 78.5 },
+                        "hr_interview_score": { "type": "number", "example": 88.0 }
+                      }
+                    },
+                    "vetoes_triggered": {
+                      "type": "array",
+                      "items": { "type": "string" },
+                      "example": []
+                    },
+                    "final_unified_score": { "type": "number", "example": 83.35 },
+                    "hiring_decision": { "type": "string", "example": "Strong Hire" },
+                    "compliance_justification": { "type": "string", "example": "Excellent match across core technical indicators with clear and fluid conceptual presentation." }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
