@@ -62,3 +62,38 @@ When the interview concludes, the Technical AI passes this standardized JSON pac
   "security_veto_triggered": false,
   "technical_decision": "Strong Technical Alignment"
 }
+
+## 4. Technical Scoring & Evaluation Output (Day 47 Additions)
+The AI utilizes a dynamic JSON rulebook (`scoring_rubrics.json`) to grade candidates beyond simple keywords. It evaluates text for **Depth, Logic, Accuracy,** and **Real-World Applicability**.
+
+At the end of an interview, `report_generator.py` compiles the raw math into an Explainable HR Payload:
+
+```json
+{
+  "candidate_id": "C-500",
+  "overall_technical_score": 89.5,
+  "decision": "Strong Technical Fit",
+  "skills_breakdown": {
+    "System Architecture": 95.0,
+    "Database Logic": 84.0
+  },
+  "strengths": [
+    "Strong proficiency in System Architecture",
+    "Excellent architectural and system design thinking"
+  ],
+  "weaknesses": [],
+  "detailed_question_breakdown": [
+    {
+      "question_id": "Q1",
+      "skill": "System Architecture",
+      "score": 95.0,
+      "depth": "deep",
+      "explanation": {
+        "accuracy": "Correct and accurate answer",
+        "depth": "Deep architectural understanding; explained trade-offs",
+        "logic": "Excellent step-by-step logical reasoning",
+        "real_world": "Strongly linked to production/real-world use cases"
+      }
+    }
+  ]
+}
