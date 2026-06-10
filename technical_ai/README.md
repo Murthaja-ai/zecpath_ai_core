@@ -2,6 +2,7 @@
 
 ## 1. Interview Flow Design Diagram
 
+```text
 [START]
    |
    v
@@ -27,6 +28,7 @@
    |
    v
 [END]
+```
 
 ## 2. Interview State Structure (Live Tracking)
 During an active interview, the system maintains this state matrix in memory to track momentum and adjust difficulty:
