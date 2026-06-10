@@ -1,0 +1,48 @@
+{
+  "experience_bands": {
+    "0-2": {
+      "initial_difficulty": "basic",
+      "allowed_types": ["definition", "syntax_check", "fundamental_concept"]
+    },
+    "3-5": {
+      "initial_difficulty": "intermediate",
+      "allowed_types": ["problem_solving", "optimization", "applied_scenario"]
+    },
+    "5+": {
+      "initial_difficulty": "advanced",
+      "allowed_types": ["system_design", "architecture_decision", "scalability"]
+    }
+  },
+  "role_mappings": {
+    "frontend_developer": {
+      "core_domains": ["JavaScript", "TypeScript", "Angular"],
+      "ui_libraries": ["Angular Material", "PrimeNG", "Tailwind CSS"]
+    },
+    "data_scientist": {
+      "core_domains": ["Python", "Statistics", "Machine Learning"],
+      "data_libraries": ["NumPy", "Pandas", "Matplotlib", "Seaborn"]
+    },
+    "java_developer": {
+      "core_domains": ["Java", "Spring Boot", "Microservices"],
+      "database_targets": ["PostgreSQL", "MongoDB"]
+    },
+    "devops_engineer": {
+      "core_domains": ["CI/CD", "Docker", "Kubernetes"],
+      "cloud_infrastructure": ["AWS", "Terraform"]
+    }
+  },
+  "evaluation_rubrics": {
+    "basic": {
+      "passing_score_decimal": 0.60,
+      "streak_threshold": 2
+    },
+    "intermediate": {
+      "passing_score_decimal": 0.70,
+      "streak_threshold": 2
+    },
+    "advanced": {
+      "passing_score_decimal": 0.80,
+      "streak_threshold": 2
+    }
+  }
+}
