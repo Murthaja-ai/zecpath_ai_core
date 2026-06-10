@@ -1,0 +1,38 @@
+{
+  "question_types": {
+    "conceptual": {
+      "weights": {
+        "accuracy": 0.40,
+        "depth": 0.30,
+        "logic": 0.20,
+        "real_world": 0.10
+      }
+    },
+    "coding": {
+      "weights": {
+        "accuracy": 0.50,
+        "logic": 0.30,
+        "optimization": 0.20
+      }
+    },
+    "scenario": {
+      "weights": {
+        "decision_quality": 0.30,
+        "logic": 0.30,
+        "real_world": 0.40
+      }
+    },
+    "system_design": {
+      "weights": {
+        "architecture": 0.40,
+        "scalability": 0.30,
+        "trade_offs": 0.30
+      }
+    }
+  },
+  "difficulty_multipliers": {
+    "basic": 1.0,
+    "intermediate": 1.1,
+    "advanced": 1.25
+  }
+}
