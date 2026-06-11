@@ -10,6 +10,7 @@ This repository (`zecpath_ai_core`) contains the foundational backend architectu
 3. **The Advanced HR Interviewer (Phases 11-25):** A deep, 30-minute psychological evaluation engine. It features dynamic role-based question playlists, a 4-phase state machine (Intro, Core, Role, Closing), and real-time empathy heuristics to trigger follow-up questions.
 4. **The Technical Interview System (Phase 7 / Day 46+):** An adaptive technical evaluation engine with a dynamic hysteresis difficulty progression, multi-domain skill hierarchy (MERN, Java, Data Science, DevOps), and automated system-design probing for senior candidates.
 5. **The Behavioral AI Engine (Phase 8 / Day 48+):** A context-aware, non-invasive visual telemetry analyzer. It monitors eye focus, head stability, and engagement, dynamically adjusting its strictness based on the live interview phase to detect true distraction without penalizing natural cognitive reflection.
+6. **The Integrity & Security Shield (Phase 9 / Day 49+):** A non-invasive digital proctoring engine. It monitors tab-switching, browser focus loss, and external voice anomalies. It utilizes compounding heuristics and integrates directly with the behavioral context to catch coordinated cheating without penalizing honest candidates.
 
 
 
@@ -23,6 +24,7 @@ Because of the massive scale of this enterprise architecture, technical document
 * ➡️ **[Phase 3: Advanced HR Interview Architecture (Day 33 - 45)](./interview_ai/README.md)**
 * ➡️ **[Phase 7: Technical Interview AI System (Day 46+)](./technical_ai/README.md)**
 * ➡️ **[Phase 8: Behavioral AI & Engagement Analysis (Day 48+)](./behavior_ai/README.md)**
+* ➡️ **[Phase 9: Integrity & Malpractice Detection (Day 49+)](./integrity_ai/README.md)**
 
 ## 🚀 Global Setup & Installation
 

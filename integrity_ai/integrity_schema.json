@@ -1,0 +1,39 @@
+{
+  "system_metadata": {
+    "module": "Phase 9 - Malpractice & Integrity Shield",
+    "version": "1.0"
+  },
+  "temporal_rules": {
+    "sliding_window_seconds": 60,
+    "decay_rate_per_minute": 0.10
+  },
+  "context_threshold_overrides": {
+    "introduction_phase": {
+      "tab_switch_limit": 2,
+      "gaze_off_limit": 4,
+      "voice_detect_limit": 1
+    },
+    "conceptual_probing": {
+      "tab_switch_limit": 1,
+      "gaze_off_limit": 3,
+      "voice_detect_limit": 1
+    },
+    "system_design_challenge": {
+      "tab_switch_limit": 3,
+      "gaze_off_limit": 15,
+      "voice_detect_limit": 2
+    }
+  },
+  "compounding_multipliers": {
+    "gaze_plus_voice": {
+      "signals": ["gaze_off", "voice_detect"],
+      "multiplier": 1.75,
+      "description": "Simultaneous gaze deviation and external voice tracking indicates high probability of off-screen reading assistance."
+    },
+    "tab_plus_focus_loss": {
+      "signals": ["tab_switch", "focus_loss"],
+      "multiplier": 1.50,
+      "description": "Concurrent browser window shifting and system focus drop confirms active secondary application usage."
+    }
+  }
+}
