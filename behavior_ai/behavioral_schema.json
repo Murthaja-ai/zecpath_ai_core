@@ -1,0 +1,54 @@
+{
+  "system_metadata": {
+    "version": "1.0",
+    "description": "Dynamic, context-aware behavioral scoring rules for Zecpath AI."
+  },
+  "calibration_settings": {
+    "duration_seconds": 120,
+    "allowed_baseline_variance": 0.15,
+    "purpose": "Establishes a normal resting baseline for the candidate's natural eye movement and head posture to prevent biased scoring."
+  },
+  "context_weights": {
+    "introduction_phase": {
+      "weights": {
+        "eye_focus": 0.40,
+        "head_stability": 0.20,
+        "engagement": 0.40
+      },
+      "distraction_penalty": 0.20
+    },
+    "conceptual_probing": {
+      "weights": {
+        "eye_focus": 0.50,
+        "head_stability": 0.30,
+        "engagement": 0.20
+      },
+      "distraction_penalty": 0.40
+    },
+    "system_design_challenge": {
+      "weights": {
+        "eye_focus": 0.15,
+        "head_stability": 0.15,
+        "engagement": 0.70
+      },
+      "distraction_penalty": 0.10
+    }
+  },
+  "risk_thresholds": {
+    "high_risk": {
+      "max_score": 49.9,
+      "tier_name": "High Risk / Disconnected",
+      "insight": "Warning: High frequency of prolonged off-screen gaze or erratic movements detected."
+    },
+    "moderate_risk": {
+      "max_score": 69.9,
+      "tier_name": "Moderate Risk / Wavering",
+      "insight": "Occasional loss of focus; potential environmental distractions or nervousness."
+    },
+    "low_risk": {
+      "max_score": 100.0,
+      "tier_name": "Low Risk / Highly Engaged",
+      "insight": "Candidate is showing strong continuous engagement and appropriate cognitive reflection."
+    }
+  }
+}
