@@ -1,0 +1,68 @@
+{
+  "system_metadata": {
+    "module": "Phase 10 - Machine Test Adaptive Schema",
+    "version": "1.0"
+  },
+  "task_types": {
+    "coding_problem": {
+      "description": "Standard algorithm and data structure challenges.",
+      "thresholds": {
+        "max_runtime_seconds": 0.5,
+        "optimal_lines_max": 40,
+        "max_attempts": 3,
+        "expected_time_minutes": 20
+      },
+      "weights": {
+        "correctness": 0.50,
+        "efficiency": 0.30,
+        "code_quality": 0.10,
+        "problem_solving": 0.10
+      }
+    },
+    "debugging_task": {
+      "description": "Fixing broken code snippets.",
+      "thresholds": {
+        "max_runtime_seconds": 1.0,
+        "optimal_lines_max": 100, 
+        "max_attempts": 5,
+        "expected_time_minutes": 15
+      },
+      "weights": {
+        "correctness": 0.60,
+        "efficiency": 0.10,
+        "code_quality": 0.10,
+        "problem_solving": 0.20
+      }
+    },
+    "file_based_task": {
+      "description": "Real-world data parsing or file manipulation.",
+      "thresholds": {
+        "max_runtime_seconds": 4.0,
+        "optimal_lines_max": 150,
+        "max_attempts": 4,
+        "expected_time_minutes": 40
+      },
+      "weights": {
+        "correctness": 0.40,
+        "efficiency": 0.20,
+        "code_quality": 0.30,
+        "problem_solving": 0.10
+      }
+    },
+    "mini_system_design": {
+      "description": "Designing structural skeletons and API contracts.",
+      "thresholds": {
+        "max_runtime_seconds": 2.0,
+        "optimal_lines_max": 300,
+        "max_attempts": 8,
+        "expected_time_minutes": 45
+      },
+      "weights": {
+        "correctness": 0.20,
+        "efficiency": 0.10,
+        "code_quality": 0.50,
+        "problem_solving": 0.20
+      }
+    }
+  }
+}

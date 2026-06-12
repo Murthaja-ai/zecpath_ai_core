@@ -11,6 +11,7 @@ This repository (`zecpath_ai_core`) contains the foundational backend architectu
 4. **The Technical Interview System (Phase 7 / Day 46+):** An adaptive technical evaluation engine with a dynamic hysteresis difficulty progression, multi-domain skill hierarchy (MERN, Java, Data Science, DevOps), and automated system-design probing for senior candidates.
 5. **The Behavioral AI Engine (Phase 8 / Day 48+):** A context-aware, non-invasive visual telemetry analyzer. It monitors eye focus, head stability, and engagement, dynamically adjusting its strictness based on the live interview phase to detect true distraction without penalizing natural cognitive reflection.
 6. **The Integrity & Security Shield (Phase 9 / Day 49+):** A non-invasive digital proctoring engine. It monitors tab-switching, browser focus loss, and external voice anomalies. It utilizes compounding heuristics and integrates directly with the behavioral context to catch coordinated cheating without penalizing honest candidates.
+7. **The Machine Test Engine (Phase 10 / Day 50+):** A practical execution sandbox evaluator. It grades live coding and system design tasks using continuous mathematical decay for runtime/efficiency, structural code quality checks, and features a strict data-interlock with the Phase 9 Integrity Shield to nullify fraudulent submissions.
 
 
 
@@ -25,6 +26,7 @@ Because of the massive scale of this enterprise architecture, technical document
 * ➡️ **[Phase 7: Technical Interview AI System (Day 46+)](./technical_ai/README.md)**
 * ➡️ **[Phase 8: Behavioral AI & Engagement Analysis (Day 48+)](./behavior_ai/README.md)**
 * ➡️ **[Phase 9: Integrity & Malpractice Detection (Day 49+)](./integrity_ai/README.md)**
+* ➡️ **[Phase 10: Machine Test Practical Evaluation (Day 50+)](./machine_test/README.md)**
 
 ## 🚀 Global Setup & Installation
 
