@@ -1,0 +1,35 @@
+{
+  "system_metadata": {
+    "module": "Phase 12 - Final Decision Rules",
+    "version": "1.0"
+  },
+  "score_thresholds": {
+    "selected": 80,
+    "hold_review": 60,
+    "rejected": 0
+  },
+  "risk_penalties": {
+    "behavior_risk": {
+      "Low Risk": 0,
+      "Moderate Risk": 5,
+      "High Risk": 15
+    },
+    "integrity_risk": {
+      "Low Risk": 0,
+      "Moderate Risk": 10,
+      "High Risk": 25
+    }
+  },
+  "compliance_hard_gates": {
+    "integrity_override": {
+      "trigger_status": "High Risk",
+      "forced_decision": "Rejected",
+      "rationale": "Critical Integrity Breach detected. Candidate is disqualified regardless of technical score."
+    },
+    "behavior_override": {
+      "trigger_status": "High Risk",
+      "forced_decision": "Hold / Review",
+      "rationale": "Severe behavioral flags detected. Mandatory HR Director review required before any offer."
+    }
+  }
+}
