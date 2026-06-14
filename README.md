@@ -12,6 +12,7 @@ This repository (`zecpath_ai_core`) contains the foundational backend architectu
 5. **The Behavioral AI Engine (Phase 8 / Day 48+):** A context-aware, non-invasive visual telemetry analyzer. It monitors eye focus, head stability, and engagement, dynamically adjusting its strictness based on the live interview phase to detect true distraction without penalizing natural cognitive reflection.
 6. **The Integrity & Security Shield (Phase 9 / Day 49+):** A non-invasive digital proctoring engine. It monitors tab-switching, browser focus loss, and external voice anomalies. It utilizes compounding heuristics and integrates directly with the behavioral context to catch coordinated cheating without penalizing honest candidates.
 7. **The Machine Test Engine (Phase 10 / Day 50+):** A practical execution sandbox evaluator. It grades live coding and system design tasks using continuous mathematical decay for runtime/efficiency, structural code quality checks, and features a strict data-interlock with the Phase 9 Integrity Shield to nullify fraudulent submissions.
+8. **Cross-Round Aggregation Engine (Phase 11 / Day 51+):** The unified scoring brain. It aggregates data from the ATS, Voice AI, HR modules, and Technical sandboxes. It features dynamic residual re-weighting for missing data, cohort-based normalization, and dynamically generates Explainable AI (XAI) summaries for recruiters.
 
 
 
@@ -27,6 +28,7 @@ Because of the massive scale of this enterprise architecture, technical document
 * ➡️ **[Phase 8: Behavioral AI & Engagement Analysis (Day 48+)](./behavior_ai/README.md)**
 * ➡️ **[Phase 9: Integrity & Malpractice Detection (Day 49+)](./integrity_ai/README.md)**
 * ➡️ **[Phase 10: Machine Test Practical Evaluation (Day 50+)](./machine_test/README.md)**
+* ➡️ **[Phase 11: Cross-Round Aggregation Engine (Day 51+)](./aggregation_core/README.md)**
 
 ## 🚀 Global Setup & Installation
 

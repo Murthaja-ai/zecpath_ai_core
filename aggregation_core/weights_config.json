@@ -1,0 +1,44 @@
+{
+  "system_metadata": {
+    "module": "Phase 11 - Aggregation & Orchestration",
+    "version": "2.0",
+    "description": "Dynamic weight distribution and cohort normalization schemas."
+  },
+  "cohort_normalization_bounds": {
+    "ats": { "historical_min": 40, "historical_max": 95 },
+    "screening": { "historical_min": 50, "historical_max": 98 },
+    "hr": { "historical_min": 60, "historical_max": 100 },
+    "technical": { "historical_min": 30, "historical_max": 90 },
+    "machine_test": { "historical_min": 25, "historical_max": 100 }
+  },
+  "role_weights": {
+    "technical_senior": {
+      "ats": 0.15,
+      "screening": 0.05,
+      "hr": 0.10,
+      "technical": 0.35,
+      "machine_test": 0.35
+    },
+    "technical_junior": {
+      "ats": 0.20,
+      "screening": 0.10,
+      "hr": 0.15,
+      "technical": 0.30,
+      "machine_test": 0.25
+    },
+    "product_manager": {
+      "ats": 0.20,
+      "screening": 0.15,
+      "hr": 0.30,
+      "technical": 0.20,
+      "machine_test": 0.15
+    },
+    "sales_executive": {
+      "ats": 0.25,
+      "screening": 0.35,
+      "hr": 0.40,
+      "technical": 0.0,
+      "machine_test": 0.0
+    }
+  }
+}
