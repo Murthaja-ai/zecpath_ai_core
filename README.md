@@ -14,7 +14,7 @@ This repository (`zecpath_ai_core`) contains the foundational backend architectu
 7. **The Machine Test Engine (Phase 10 / Day 50+):** A practical execution sandbox evaluator. It grades live coding and system design tasks using continuous mathematical decay for runtime/efficiency, structural code quality checks, and features a strict data-interlock with the Phase 9 Integrity Shield to nullify fraudulent submissions.
 8. **Cross-Round Aggregation Engine (Phase 11 / Day 51+):** The unified scoring brain. It aggregates data from the ATS, Voice AI, HR modules, and Technical sandboxes. It features dynamic residual re-weighting for missing data, cohort-based normalization, and dynamically generates Explainable AI (XAI) summaries for recruiters.
 9. **Final Recommendation AI (Phase 12 / Day 52+):** The ultimate decision-making CEO engine. It applies hybrid rule/score logic, utilizing Hard Gate Overrides to reject high-scoring but high-risk candidates (e.g., cheaters), calculates a Multi-Factor Confidence Index, and generates defensible Explainable AI hiring narratives.
-
+10. **Hiring Intelligence Report Generator (Phase 13 / Day 53+):** The presentation layer. It compiles the vast telemetry from all preceding evaluation phases (ATS, Screening, Tech, Behavioral, and Final Decision) into a single, structured, export-ready Markdown dossier utilizing BLUF (Bottom Line Up Front) architecture.
 
 
 
@@ -31,6 +31,7 @@ Because of the massive scale of this enterprise architecture, technical document
 * ➡️ **[Phase 10: Machine Test Practical Evaluation (Day 50+)](./machine_test/README.md)**
 * ➡️ **[Phase 11: Cross-Round Aggregation Engine (Day 51+)](./aggregation_core/README.md)**
 * ➡️ **[Phase 12: Final Recommendation AI (Day 52+)](./recommendation_core/README.md)**
+* ➡️ **[Phase 13: Hiring Intelligence Report Generator (Day 53+)](./reporting_core/README.md)**
 
 ## 🚀 Global Setup & Installation
 
