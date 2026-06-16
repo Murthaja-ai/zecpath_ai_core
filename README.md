@@ -16,6 +16,7 @@ This repository (`zecpath_ai_core`) contains the foundational backend architectu
 9. **Final Recommendation AI (Phase 12 / Day 52+):** The ultimate decision-making CEO engine. It applies hybrid rule/score logic, utilizing Hard Gate Overrides to reject high-scoring but high-risk candidates (e.g., cheaters), calculates a Multi-Factor Confidence Index, and generates defensible Explainable AI hiring narratives.
 10. **Hiring Intelligence Report Generator (Phase 13 / Day 53+):** The presentation layer. It compiles the vast telemetry from all preceding evaluation phases (ATS, Screening, Tech, Behavioral, and Final Decision) into a single, structured, export-ready Markdown dossier utilizing BLUF (Bottom Line Up Front) architecture.
 11. **Optimization & Refinement (Phase 14 / Day 54+):** The performance tuning layer. Upgrades the system from a functional prototype to an enterprise-grade pipeline by implementing statistical standard-deviation scoring, strict Hard-Gate edge case resolution, and asynchronous concurrent batch processing.
+12. **Security & AI Governance (Phase 15 / Day 55):** The enterprise compliance vault. Enforces strict Role-Based Access Control (RBAC), mandates candidate consent gates, utilizes AES-256 persistent encryption for sensitive PII, and generates immutable JSON-Lines audit trails for legal defensibility.
 
 
 
@@ -34,6 +35,7 @@ Because of the massive scale of this enterprise architecture, technical document
 * ➡️ **[Phase 12: Final Recommendation AI (Day 52+)](./recommendation_core/README.md)**
 * ➡️ **[Phase 13: Hiring Intelligence Report Generator (Day 53+)](./reporting_core/README.md)**
 * ➡️ **[Phase 14: System Optimization & Refinement (Day 54+)](./optimization_core/README.md)**
+* ➡️ **[Phase 15: Security & AI Governance (Day 55)](./security_core/README.md)**
 
 ## 🚀 Global Setup & Installation
 

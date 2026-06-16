@@ -1,0 +1,2 @@
+{"timestamp_utc": "2026-06-16T14:23:43.600626", "event_type": "AI_DECISION_GENERATED", "actor_id": "Zecpath_AI_Engine_v12", "details": {"candidate_id": "C1000", "final_status": "Rejected", "reason": "Hard Gate Integrity Check"}}
+{"timestamp_utc": "2026-06-16T14:25:54.059673", "event_type": "AI_DECISION_GENERATED", "actor_id": "Zecpath_AI_Engine_v12", "details": {"candidate_id": "C1000", "final_status": "Rejected", "reason": "Hard Gate Integrity Check"}}
