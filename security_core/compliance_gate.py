@@ -1,6 +1,5 @@
 # security_core/compliance_gate.py
-from governance_config import GovernancePolicy
-
+from security_core.governance_config import GovernancePolicy
 class SecurityViolation(Exception):
     """Custom exception triggered during unauthorized access."""
     pass
