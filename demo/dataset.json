@@ -1,0 +1,52 @@
+{
+  "job_requisition": {
+    "role": "Senior Frontend Architect",
+    "core_stack": ["Angular 21", "RxJS", "Signal Forms", "Python", "Pandas"]
+  },
+  "candidates": [
+    {
+      "archetype": "The Unicorn",
+      "candidate_id": "C_1001",
+      "personal_data": {
+        "name": "Sarah Jenkins",
+        "email": "sarah.j.dev99@gmail.com",
+        "phone": "+1-555-019-8372"
+      },
+      "raw_scores": { "ats": 92, "technical": 95, "hr_communication": 90 },
+      "security_flags": { "tab_switch_count": 0, "off_screen_focus": false }
+    },
+    {
+      "archetype": "The Brilliant Jerk",
+      "candidate_id": "C_1002",
+      "personal_data": {
+        "name": "Marcus Volkov",
+        "email": "m.volkov.coder@yandex.com",
+        "phone": "+44-7700-900077"
+      },
+      "raw_scores": { "ats": 88, "technical": 99, "hr_communication": 45 },
+      "security_flags": { "tab_switch_count": 1, "off_screen_focus": false }
+    },
+    {
+      "archetype": "The Cheater",
+      "candidate_id": "C_1003",
+      "personal_data": {
+        "name": "David Chen",
+        "email": "d.chen.hacked@protonmail.com",
+        "phone": "+1-555-012-9933"
+      },
+      "raw_scores": { "ats": 95, "technical": 98, "hr_communication": 85 },
+      "security_flags": { "tab_switch_count": 14, "off_screen_focus": true }
+    },
+    {
+      "archetype": "The Unqualified",
+      "candidate_id": "C_1004",
+      "personal_data": {
+        "name": "Jessica Alby",
+        "email": "jess.alby.student@university.edu",
+        "phone": "+1-555-014-2288"
+      },
+      "raw_scores": { "ats": 45, "technical": 30, "hr_communication": 60 },
+      "security_flags": { "tab_switch_count": 0, "off_screen_focus": false }
+    }
+  ]
+}
