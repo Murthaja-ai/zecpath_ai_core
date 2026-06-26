@@ -1,0 +1,21 @@
+{
+  "meta": {
+    "system_status": "PRODUCTION_READY",
+    "version": "v1.0",
+    "latency_ms": 112,
+    "cryptographic_hash": "8f4a2b9c..."
+  },
+  "data": {
+    "candidate_id": "C_1001",
+    "decision_engine": {
+      "final_score": 91.33,
+      "decision_status": "SELECTED",
+      "confidence_interval": "HIGH"
+    },
+    "recruiter_insights": {
+      "technical_summary": "Candidate demonstrated elite proficiency in modern frontend frameworks and Python data structures.",
+      "behavioral_summary": "Highly consistent communication. Integrity tracking showed 0 risk flags.",
+      "action_recommendation": "Proceed to final executive interview and offer generation."
+    }
+  }
+}
