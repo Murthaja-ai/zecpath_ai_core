@@ -12,12 +12,16 @@
 ## 2. Before vs. After System Execution
 
 **Before (Bugged State):**
+```json
 {
   "score": 150,
   "decision": "Selected"
 }
+```
+
 
 **After (Release Ready):**
+```json
 {
   "candidate_id": "C_9011",
   "final_score": 100.0,
